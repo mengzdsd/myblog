@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Mengz You's blogger.]]></title>
+  <link href="http://mengzyou.github.io/atom.xml" rel="self"/>
+  <link href="http://mengzyou.github.io/"/>
+  <updated>2014-01-03T00:42:19+08:00</updated>
+  <id>http://mengzyou.github.io/</id>
+  <author>
+    <name><![CDATA[Mengz You]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[开始]]></title>
+    <link href="http://mengzyou.github.io/blog/2014/01/02/start.html"/>
+    <updated>2014-01-02T21:33:20+08:00</updated>
+    <id>http://mengzyou.github.io/blog/2014/01/02/start</id>
+    <content type="html"><![CDATA[<p>我的 2013 ！</p>
+
+<div class="g-post" data-href="https://plus.google.com/110469673943058147906/posts/8trcDpT5Ez8"></div>
+
+]]></content>
+  </entry>
+  
+</feed>

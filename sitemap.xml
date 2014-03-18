@@ -1,55 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://mengzyou.github.io/blog/2014/01/02/start.html</loc>
-<<<<<<< HEAD
-        <lastmod>2014-02-09T21:40:31-05:00</lastmod>
+        <loc>http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html</loc>
+        <lastmod>2014-03-18T23:07:18+08:00</lastmod>
     </url>
     <url>
-        <loc>http://mengzyou.github.io/blog/archives/</loc>
-        <lastmod>2014-02-09T21:40:31-05:00</lastmod>
+        <loc>http://mengzyou.github.io/blog/2014/01/02/start.html</loc>
+        <lastmod>2014-02-10T21:04:54+08:00</lastmod>
     </url>
     <url>
         <loc>http://mengzyou.github.io/</loc>
-        <lastmod>2014-02-09T21:40:31-05:00</lastmod>
+        <lastmod>2014-03-18T23:07:18+08:00</lastmod>
     </url>
     <url>
-        <loc>http://mengzyou.github.io/about/resume.html</loc>
-        <lastmod>2014-02-18T21:38:45-05:00</lastmod>
+        <loc>http://mengzyou.github.io/blog/archives/</loc>
+        <lastmod>2014-03-18T23:07:18+08:00</lastmod>
     </url>
     <url>
-        <loc>http://mengzyou.github.io/about/</loc>
-        <lastmod>2014-02-18T20:59:34-05:00</lastmod>
+        <loc>http://mengzyou.github.io/robots.txt</loc>
+        <lastmod>2014-02-10T21:04:54+08:00</lastmod>
     </url>
     <url>
         <loc>http://mengzyou.github.io/about/resume_en.html</loc>
-        <lastmod>2014-02-18T21:38:43-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mengzyou.github.io/robots.txt</loc>
-        <lastmod>2014-02-09T21:40:32-05:00</lastmod>
-=======
-        <lastmod>2014-02-08T21:12:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mengzyou.github.io/</loc>
-        <lastmod>2014-02-08T21:12:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mengzyou.github.io/blog/archives/</loc>
-        <lastmod>2014-02-08T21:12:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mengzyou.github.io/robots.txt</loc>
-        <lastmod>2014-02-08T21:12:00+08:00</lastmod>
+        <lastmod>2014-02-23T23:53:26+08:00</lastmod>
     </url>
     <url>
         <loc>http://mengzyou.github.io/about/</loc>
-        <lastmod>2014-02-10T20:59:09+08:00</lastmod>
+        <lastmod>2014-03-18T23:07:18+08:00</lastmod>
     </url>
     <url>
         <loc>http://mengzyou.github.io/about/resume.html</loc>
-        <lastmod>2014-02-10T20:01:57+08:00</lastmod>
->>>>>>> d07618cfae26729da948f065859f0ecd2acbbc5c
+        <lastmod>2014-02-23T23:53:26+08:00</lastmod>
     </url>
 </urlset>

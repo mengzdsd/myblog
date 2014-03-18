@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>在openSUSE上使用3G数据卡 - Mengz You's blogger.</title>
+  <meta name="author" content="Mengz You">
+
+  
+  <meta name="description" content="记录这样在openSUSE上成功使用联通3G数据卡上网">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Mengz You's blogger." type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- Goolge Plus posts -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Mengz You's blogger.</a></h1>
+  
+    <h2>-就是我的一个博客.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mengzyou.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">文章</a></li>
+  <li><a href="/about">关于我</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">在openSUSE上使用3G数据卡</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-15T21:33:20+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>今天这篇是因为想把怎么成功连上网的过程给记录下来。真应该感谢家里的宽带坏掉了，还有手里正好有一个华为的联通3G数据上网卡，所以就折腾了一下，这都是废话了！</p>
+
+<h3>工具准备</h3>
+
+<p>首先要保证系统里已经安装<a href="http://software.opensuse.org/package/usb_modeswitch">usb_modeswitch</a>和<a href="http://software.opensuse.org/package/wvdial">wvdial</a>这两个包，因为我们要使用这两个命令，一个是用来切换 usb 模式的，一个是用来拨号的。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h3>切换上网卡usb模式</h3>
+
+<p>插入华为的 3g 联通数据上网卡（我这个的型号是 HUAWEI E261），使用如下 lsusb 命令查看信息:</p>
+
+<blockquote><p># lsusb | grep &ldquo;Huawei&rdquo; <br/>
+Bus 002 Device 003: ID 12d1:1436 Huawei Technologies Co., Ltd.</p></blockquote>
+
+<p>记录下 ID，也就是 12d1:1436 ，一个厂商号，一个设备号。
+然后使用如下命令将切换 usb 模式：</p>
+
+<blockquote><p># usb_modeswitch –default-vendor 0x12d1 –default-product 0×1436 –target-vendor 0x12d1 –target-product 0×1436 –huawei-mode</p>
+
+<p>Looking for target devices … <br/>
+found matching product ID <br/>
+adding device <br/>
+Found devices in target mode or class (1) <br/>
+Looking for default devices … <br/>
+found matching product ID <br/>
+adding device <br/>
+Found device in default mode, class or configuration (1) <br/>
+Accessing device 003 on bus 002 … <br/>
+Getting the current device configuration … <br/>
+OK, got current device configuration (1) <br/>
+Using first interface: 0×00 <br/>
+Using endpoints 0×01 (out) and 0×82 (in) <br/>
+Not a storage device, skipping SCSI inquiry</p>
+
+<p>USB description data (for identification) <br/>
+————————-
+Manufacturer: HUAWEI Technology <br/>
+Product: HUAWEI Mobile <br/>
+Serial No.: not provided <br/>
+————————- <br/>
+Sending Huawei control message … <br/>
+OK, Huawei control message sent <br/>
+&ndash;> Run lsusb to note any changes. Bye.</p></blockquote>
+
+<p>然后，</p>
+
+<blockquote><p># ls /dev/ttyUSB* <br/>
+/dev/ttyUSB0 /dev/ttyUSB1 /dev/ttyUSB2</p></blockquote>
+
+<p>已经有了3个 ttyUSB 设备。</p>
+
+<h3>配置wvdial</h3>
+
+<p>运行下面的命令来生成 wvdial 的配置文件：</p>
+
+<blockquote><p># wvdialconf <br/>
+Editing `/etc/wvdial.conf’.</p>
+
+<p>Scanning your serial ports for a modem.</p>
+
+<p>Modem Port Scan&lt;*1>: S0 S1 S2 S3 S4 S5 S6 S7 <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 — OK <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 Z — OK <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 S0=0 — OK <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 — OK <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 — OK <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 — OK <br/>
+ttyUSB0&lt;*1>: Modem Identifier: ATI — Manufacturer: huawei <br/>
+ttyUSB0&lt;*1>: Speed 9600: AT — OK <br/>
+ttyUSB0&lt;*1>: Max speed is 9600; that should be safe. <br/>
+ttyUSB0&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 — OK <br/>
+ttyUSB1&lt;*1>: ATQ0 V1 E1 — failed with 2400 baud, next try: 9600 baud <br/>
+ttyUSB1&lt;*1>: ATQ0 V1 E1 — failed with 9600 baud, next try: 9600 baud <br/>
+ttyUSB1&lt;*1>: ATQ0 V1 E1 — and failed too at 115200, giving up. <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 — OK <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 Z — OK <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 S0=0 — OK <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 — OK <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 — OK <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 — OK <br/>
+ttyUSB2&lt;*1>: Modem Identifier: ATI — Manufacturer: huawei <br/>
+ttyUSB2&lt;*1>: Speed 9600: AT — OK <br/>
+ttyUSB2&lt;*1>: Max speed is 9600; that should be safe. <br/>
+ttyUSB2&lt;*1>: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 — OK</p>
+
+<p>Found a modem on /dev/ttyUSB0. <br/>
+Modem configuration written to /etc/wvdial.conf. <br/>
+ttyUSB0: Speed 9600; init “ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0″ <br/>
+ttyUSB2: Speed 9600; init “ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0″</p></blockquote>
+
+<p>可以看到，配置文件在<em>/etc/wvdial.conf</em>，然后修改一下该文件，我修改后的文件内容如下:</p>
+
+<blockquote><p># cat /etc/wvdial.conf</p>
+
+<p>[Dialer Defaults] <br/>
+Init1 = ATZ <br/>
+Init2 = ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 <br/>
+Modem = /dev/ttyUSB0 <br/>
+Phone = *99# <br/>
+Idle Seconds = 300 <br/>
+Modem Type = Analog Modem <br/>
+Stupid Mode = 1 <br/>
+Compuserve = 0 <br/>
+Baud = 9600 <br/>
+Auto DNS = 1 <br/>
+Dial Command = ATDT <br/>
+Ask Password = 0 <br/>
+ISDN = 0 <br/>
+Password = any <br/>
+Username = any</p></blockquote>
+
+<h3>拨号上网</h3>
+
+<p>接下来就直接运行 wvdial 拨号：</p>
+
+<blockquote><p># wvdial <br/>
+–> WvDial: Internet dialer version 1.60 <br/>
+–> Initializing modem. <br/>
+–> Sending: ATZ <br/>
+ATZ <br/>
+OK <br/>
+–> Sending: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 <br/>
+ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 <br/>
+OK <br/>
+–> Modem initialized. <br/>
+–> Idle Seconds = 300, disabling automatic reconnect. <br/>
+–> Sending: ATDT*99# <br/>
+–> Waiting for carrier. <br/>
+ATDT*99# <br/>
+CONNECT <br/>
+–> Carrier detected. Starting PPP immediately. <br/>
+–> Starting pppd at Mon Jan 13 23:46:44 2013 <br/>
+–> Pid of pppd: 32212 <br/>
+–> Using interface ppp0 <br/>
+–> pppd: [1e][7f] <br/>
+–> pppd: [1e][7f] <br/>
+–> pppd: [1e][7f] <br/>
+–> pppd: [1e][7f] <br/>
+–> pppd: [1e][7f] <br/>
+–> local IP address 172.20.197.35 <br/>
+–> pppd: [1e][7f] <br/>
+–> remote IP address 10.64.64.64 <br/>
+–> pppd: [1e][7f] <br/>
+–> primary DNS address 202.106.195.68 <br/>
+–> pppd: [1e][7f] <br/>
+–> secondary DNS address 202.106.46.151 <br/>
+–> pppd: [1e][7f] <br/>
+–> Script /etc/ppp/ip-up run successful <br/>
+–> Default route Ok. <br/>
+–> Nameserver (DNS) Ok. <br/>
+–> Connected… Press Ctrl-C to disconnect <br/>
+–> pppd: [1e][7f]</p></blockquote>
+
+<p>可以看到已经设置了IP地址，和DNS服务器地址，也就是OK啦！！ <br/>
+<strong>ifconfig</strong> 一下，可以看到如下的链接信息：</p>
+
+<blockquote><p># ppp0 Link encap:Point-to-Point Protocol <br/>
+inet addr:172.20.197.35 P-t-P:10.64.64.64 Mask:255.255.255.255 <br/>
+UP POINTOPOINT RUNNING NOARP MULTICAST MTU:1500 Metric:1 <br/>
+RX packets:20496 errors:0 dropped:0 overruns:0 frame:0 <br/>
+TX packets:18854 errors:0 dropped:0 overruns:0 carrier:0 <br/>
+collisions:0 txqueuelen:3 <br/>
+RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
+
+<p>这样就大功告成啦! <br/>
+最后，要感谢下<a href="http://home.cnblogs.com/u/shanlilang/">山里狼</a>的<a href="http://www.cnblogs.com/shanlilang/archive/2012/11/18/2776080.html">openSUSE简单配置</a>这篇文章，我也就是按照其指导弄的，虽然有些配置不太一样!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mengz You</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-15T21:33:20+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>Linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html" data-via="mz_you" data-counturl="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/01/02/start.html" title="Next Post: 开始">开始 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/02/start.html">开始</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/15/use-data-card-on-opensuse.html">在openSUSE上使用3G数据卡</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mengzyou">@mengzyou</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mengzyou',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/mengz.you@gmail.com?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Mengz You -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'mengzyougithubio';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html';
+        var disqus_url = 'http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

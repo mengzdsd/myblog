@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Mengz You's blogger.]]></title>
   <link href="http://mengzyou.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://mengzyou.github.io/"/>
-  <updated>2014-03-27T22:54:08+08:00</updated>
+  <updated>2014-03-28T22:06:19+08:00</updated>
   <id>http://mengzyou.github.io/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -231,7 +231,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x74;&#x65;&#x73;&#116;&#x40;&#x74;&#x65;&#115;&#x74;&#46;&#99;&#111;&#109;">&#116;&#101;&#115;&#116;&#64;&#116;&#101;&#x73;&#x74;&#46;&#99;&#111;&#x6d;</a> <br/>
+user anonymous <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#116;&#101;&#115;&#x74;&#x40;&#116;&#x65;&#115;&#116;&#46;&#99;&#111;&#109;">&#x74;&#x65;&#x73;&#x74;&#64;&#x74;&#x65;&#x73;&#x74;&#46;&#x63;&#111;&#x6d;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>

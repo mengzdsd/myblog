@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Mengz You's blogger.]]></title>
   <link href="http://mengzyou.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://mengzyou.github.io/"/>
-  <updated>2014-03-27T22:54:08+08:00</updated>
+  <updated>2014-04-04T03:15:29+00:00</updated>
   <id>http://mengzyou.github.io/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -14,9 +14,64 @@
 
   
   <entry>
+    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
+    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
+    <updated>2013-01-15T21:33:20+00:00</updated>
+    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
+
+<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
+答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h4>使用 “HERE document” 的 FTP 脚本</h4>
+
+<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
+user USERNAME PASSWORD <br/>
+binary <br/>
+cd PATH <br/>
+mget PATH <br/>
+SCRIPTEND</p></blockquote>
+
+<p>在上面的ftp脚本中： <br/>
+*   ftp : ftp命令 <br/>
+*   -i : 不用交互式提示 <br/>
+*   -n : 不用自动登录 <br/>
+*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
+*   binary : 为二进制文件传输设置模式 <br/>
+*   cd PATH : 在远程机器上改变目录 <br/>
+*   mget PATH : 获取指定文件 <br/>
+*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
+
+<h4>在Shell脚本中使用 FTP 脚本</h4>
+
+<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
+
+<blockquote><p>\$ cat download.sh <br/>
+ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
+user anonymous <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#116;&#101;&#x73;&#x74;&#x40;&#x74;&#101;&#115;&#116;&#46;&#99;&#x6f;&#109;">&#x74;&#101;&#x73;&#116;&#64;&#116;&#x65;&#x73;&#116;&#46;&#x63;&#x6f;&#x6d;</a> <br/>
+binary <br/>
+cd cpan/authors/id/P/PM/PMQS/ <br/>
+mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
+SCRIPTEND</p></blockquote>
+
+<p>执行这个脚本来下载文件</p>
+
+<blockquote><p>\$ sh download.sh <br/>
+\$ ls
+download.sh <br/>
+Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[在openSUSE上使用3G数据卡]]></title>
     <link href="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html"/>
-    <updated>2013-01-15T21:33:20+08:00</updated>
+    <updated>2013-01-15T13:33:20+00:00</updated>
     <id>http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse</id>
     <content type="html"><![CDATA[<p>今天这篇是因为想把怎么成功连上网的过程给记录下来。真应该感谢家里的宽带坏掉了，还有手里正好有一个华为的联通3G数据上网卡，所以就折腾了一下，这都是废话了！</p>
 
@@ -188,61 +243,6 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
 
 <p>这样就大功告成啦! <br/>
 最后，要感谢下<a href="http://home.cnblogs.com/u/shanlilang/">山里狼</a>的<a href="http://www.cnblogs.com/shanlilang/archive/2012/11/18/2776080.html">openSUSE简单配置</a>这篇文章，我也就是按照其指导弄的，虽然有些配置不太一样!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
-    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
-    <updated>2013-01-15T21:33:20+08:00</updated>
-    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
-    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
-
-<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
-答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h4>使用 “HERE document” 的 FTP 脚本</h4>
-
-<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
-user USERNAME PASSWORD <br/>
-binary <br/>
-cd PATH <br/>
-mget PATH <br/>
-SCRIPTEND</p></blockquote>
-
-<p>在上面的ftp脚本中： <br/>
-*   ftp : ftp命令 <br/>
-*   -i : 不用交互式提示 <br/>
-*   -n : 不用自动登录 <br/>
-*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
-*   binary : 为二进制文件传输设置模式 <br/>
-*   cd PATH : 在远程机器上改变目录 <br/>
-*   mget PATH : 获取指定文件 <br/>
-*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
-
-<h4>在Shell脚本中使用 FTP 脚本</h4>
-
-<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
-
-<blockquote><p>\$ cat download.sh <br/>
-ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x74;&#x65;&#x73;&#116;&#x40;&#x74;&#x65;&#115;&#x74;&#46;&#99;&#111;&#109;">&#116;&#101;&#115;&#116;&#64;&#116;&#101;&#x73;&#x74;&#46;&#99;&#111;&#x6d;</a> <br/>
-binary <br/>
-cd cpan/authors/id/P/PM/PMQS/ <br/>
-mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
-SCRIPTEND</p></blockquote>
-
-<p>执行这个脚本来下载文件</p>
-
-<blockquote><p>\$ sh download.sh <br/>
-\$ ls
-download.sh <br/>
-Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
 ]]></content>
   </entry>
   

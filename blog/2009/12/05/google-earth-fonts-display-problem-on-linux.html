@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>【翻译】如何在Unix Shell脚本中使用ftp下载文件 - Mengz You's blogger.</title>
+  <title>Google Earth在Linux下字体显示问题 - Mengz You's blogger.</title>
   <meta name="author" content="Mengz You">
 
   
-  <meta name="description" content="翻译的一篇关于如何在Unix Shell脚本中使用HERE Doucment来调用ftp命令下载文件">
+  <meta name="description" content="记录解决Google Earth无法显示中文字符的方法">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html">
+  <link rel="canonical" href="http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mengz You's blogger." type="application/atom+xml">
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">【翻译】如何在Unix Shell脚本中使用ftp下载文件</h1>
+      <h1 class="entry-title">Google Earth在Linux下字体显示问题</h1>
     
     
       <p class="meta">
@@ -86,60 +86,32 @@
   
 
 
-<time datetime="2013-01-15T21:33:20+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2013</time>
+<time datetime="2009-12-05T00:48:16+08:00" pubdate data-updated="true">Dec 5<span>th</span>, 2009</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
+<div class="entry-content"><p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
 
-<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
-答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
+<p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
 
 <!-- more -->
 
 
-<p></p>
+<p><img src="/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
 
-<h4>使用 “HERE document” 的 FTP 脚本</h4>
+<p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
 
-<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
-user USERNAME PASSWORD <br/>
-binary <br/>
-cd PATH <br/>
-mget PATH <br/>
-SCRIPTEND</p></blockquote>
+<p>原来是由于Google Earth自带的Qt库的问题，所以解决方法就是删除掉安装目录里的Qt库，让程序使用系统安装的Qt库，当然前提是系统安装了Qt库。因此简单的执行如下命令：</p>
 
-<p>在上面的ftp脚本中： <br/>
-*   ftp : ftp命令 <br/>
-*   -i : 不用交互式提示 <br/>
-*   -n : 不用自动登录 <br/>
-*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
-*   binary : 为二进制文件传输设置模式 <br/>
-*   cd PATH : 在远程机器上改变目录 <br/>
-*   mget PATH : 获取指定文件 <br/>
-*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
+<blockquote><p>$ cd ~/google-earth  </br>
+$ rm libQt*</p></blockquote>
 
-<h4>在Shell脚本中使用 FTP 脚本</h4>
+<p>然后再启动google earth，OK，显示正常！！</p>
 
-<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
-
-<blockquote><p>\$ cat download.sh <br/>
-ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x74;&#101;&#115;&#116;&#64;&#116;&#101;&#x73;&#x74;&#x2e;&#x63;&#x6f;&#x6d;">&#116;&#x65;&#115;&#116;&#64;&#116;&#x65;&#115;&#116;&#46;&#99;&#x6f;&#109;</a> <br/>
-binary <br/>
-cd cpan/authors/id/P/PM/PMQS/ <br/>
-mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
-SCRIPTEND</p></blockquote>
-
-<p>执行这个脚本来下载文件</p>
-
-<blockquote><p>\$ sh download.sh <br/>
-\$ ls
-download.sh <br/>
-Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
+<p><img src="/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
 </div>
 
 
@@ -162,7 +134,7 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
   
 
 
-<time datetime="2013-01-15T21:33:20+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2013</time>
+<time datetime="2009-12-05T00:48:16+08:00" pubdate data-updated="true">Dec 5<span>th</span>, 2009</time>
       
 
 <span class="categories">
@@ -176,7 +148,7 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html" data-via="mengzyou" data-counturl="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html" data-via="mengzyou" data-counturl="http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -189,10 +161,8 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html" title="Previous Post: 【翻译】简便安全地访问远程文件">&laquo; 【翻译】简便安全地访问远程文件</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/15/use-data-card-on-opensuse.html" title="Next Post: 在openSUSE上使用3G数据卡">在openSUSE上使用3G数据卡 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html" title="Next Post: 【翻译】简便安全地访问远程文件">【翻译】简便安全地访问远程文件 &raquo;</a>
       
     </p>
   </footer>
@@ -295,8 +265,8 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html';
-        var disqus_url = 'http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html';
+        var disqus_identifier = 'http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html';
+        var disqus_url = 'http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html';
         var disqus_script = 'embed.js';
       
     (function () {

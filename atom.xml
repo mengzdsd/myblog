@@ -4,7 +4,7 @@
   <title><![CDATA[Mengz You's blogger.]]></title>
   <link href="http://mengzyou.github.io/atom.xml" rel="self"/>
   <link href="http://mengzyou.github.io/"/>
-  <updated>2014-04-04T03:15:29+00:00</updated>
+  <updated>2014-04-18T14:10:55+08:00</updated>
   <id>http://mengzyou.github.io/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[【翻译】来自Elke Vogelsang拍摄惊艳狗狗肖像的秘密]]></title>
     <link href="http://mengzyou.github.io/blog/2014/03/28/trans-secrets-taking-dog-portraits.html"/>
-    <updated>2014-03-28T13:01:56+00:00</updated>
+    <updated>2014-03-28T21:01:56+08:00</updated>
     <id>http://mengzyou.github.io/blog/2014/03/28/trans-secrets-taking-dog-portraits</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://500px.com/blog/1091/the-secrets-to-taking-awesome-dog-portraits-by-elke-vogelsang">The Secrets To Taking Awesome Dog Portraits By Elke Vogelsang</a></p>
 
@@ -157,7 +157,7 @@
   <entry>
     <title type="html"><![CDATA[开始]]></title>
     <link href="http://mengzyou.github.io/blog/2014/01/02/start.html"/>
-    <updated>2014-01-02T13:33:20+00:00</updated>
+    <updated>2014-01-02T21:33:20+08:00</updated>
     <id>http://mengzyou.github.io/blog/2014/01/02/start</id>
     <content type="html"><![CDATA[<p>我的 2013 ！</p>
 
@@ -167,64 +167,9 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
-    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
-    <updated>2013-01-15T21:33:20+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
-    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
-
-<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
-答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h4>使用 “HERE document” 的 FTP 脚本</h4>
-
-<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
-user USERNAME PASSWORD <br/>
-binary <br/>
-cd PATH <br/>
-mget PATH <br/>
-SCRIPTEND</p></blockquote>
-
-<p>在上面的ftp脚本中： <br/>
-*   ftp : ftp命令 <br/>
-*   -i : 不用交互式提示 <br/>
-*   -n : 不用自动登录 <br/>
-*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
-*   binary : 为二进制文件传输设置模式 <br/>
-*   cd PATH : 在远程机器上改变目录 <br/>
-*   mget PATH : 获取指定文件 <br/>
-*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
-
-<h4>在Shell脚本中使用 FTP 脚本</h4>
-
-<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
-
-<blockquote><p>\$ cat download.sh <br/>
-ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#116;&#x65;&#115;&#x74;&#x40;&#116;&#x65;&#115;&#x74;&#46;&#99;&#111;&#109;">&#x74;&#101;&#x73;&#116;&#x40;&#116;&#101;&#115;&#x74;&#46;&#x63;&#x6f;&#109;</a> <br/>
-binary <br/>
-cd cpan/authors/id/P/PM/PMQS/ <br/>
-mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
-SCRIPTEND</p></blockquote>
-
-<p>执行这个脚本来下载文件</p>
-
-<blockquote><p>\$ sh download.sh <br/>
-\$ ls
-download.sh <br/>
-Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[在openSUSE上使用3G数据卡]]></title>
     <link href="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html"/>
-    <updated>2013-01-15T13:33:20+00:00</updated>
+    <updated>2013-01-15T21:33:20+08:00</updated>
     <id>http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse</id>
     <content type="html"><![CDATA[<p>今天这篇是因为想把怎么成功连上网的过程给记录下来。真应该感谢家里的宽带坏掉了，还有手里正好有一个华为的联通3G数据上网卡，所以就折腾了一下，这都是废话了！</p>
 
@@ -396,6 +341,139 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
 
 <p>这样就大功告成啦! <br/>
 最后，要感谢下<a href="http://home.cnblogs.com/u/shanlilang/">山里狼</a>的<a href="http://www.cnblogs.com/shanlilang/archive/2012/11/18/2776080.html">openSUSE简单配置</a>这篇文章，我也就是按照其指导弄的，虽然有些配置不太一样!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
+    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
+    <updated>2013-01-15T21:33:20+08:00</updated>
+    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
+
+<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
+答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h4>使用 “HERE document” 的 FTP 脚本</h4>
+
+<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
+user USERNAME PASSWORD <br/>
+binary <br/>
+cd PATH <br/>
+mget PATH <br/>
+SCRIPTEND</p></blockquote>
+
+<p>在上面的ftp脚本中： <br/>
+*   ftp : ftp命令 <br/>
+*   -i : 不用交互式提示 <br/>
+*   -n : 不用自动登录 <br/>
+*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
+*   binary : 为二进制文件传输设置模式 <br/>
+*   cd PATH : 在远程机器上改变目录 <br/>
+*   mget PATH : 获取指定文件 <br/>
+*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
+
+<h4>在Shell脚本中使用 FTP 脚本</h4>
+
+<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
+
+<blockquote><p>\$ cat download.sh <br/>
+ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
+user anonymous <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x74;&#101;&#115;&#116;&#64;&#116;&#101;&#x73;&#x74;&#x2e;&#x63;&#x6f;&#x6d;">&#116;&#x65;&#115;&#116;&#64;&#116;&#x65;&#115;&#116;&#46;&#99;&#x6f;&#109;</a> <br/>
+binary <br/>
+cd cpan/authors/id/P/PM/PMQS/ <br/>
+mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
+SCRIPTEND</p></blockquote>
+
+<p>执行这个脚本来下载文件</p>
+
+<blockquote><p>\$ sh download.sh <br/>
+\$ ls
+download.sh <br/>
+Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【翻译】简便安全地访问远程文件]]></title>
+    <link href="http://mengzyou.github.io/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
+    <updated>2011-06-30T13:58:46+08:00</updated>
+    <id>http://mengzyou.github.io/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.linuxjournal.com/content/accessing-remote-files-easy-and-secure">Accessing Remote Files Easily and Securely</a></p>
+
+<p>安全shell – <a href="http://en.wikipedia.org/wiki/SSH">ssh</a>以及<a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a>是我每天基本上都会用到的工具。当在多系统上工作时，不设置<a href="http://www.samba.org/">SAMBA</a>或者<a href="http://en.wikipedia.org/wiki/Network_File_System">NFS</a>就能在机器之间移动文件是非常便利的。而你所需要的就是打开安全shell守护进程 – <a href="http://www.openssh.com/">sshd</a> 。</p>
+
+<!-- more -->
+
+
+<p>在我们进入[sshfs][sshfs_site]的细节之前，让我们来快速看一下ssh 。安全shell守护进程默认运行的端口22上。它使得可以运行一个加密的shell交互。带上-Y选项，你可以运行<a href="http://www.x.org/">X11</a>转发机制，允许你在远程机器上运行X11等图形程序以及在你当前的终端上显示窗口。</p>
+
+<p>你可以通过<em>/etc/ssh/sshd_config</em>(这个位置是在<a href="http://www.ubuntu.com/">ubuntu</a>系统上，不同发行版可能不同）文件来配置 <a href="http://www.openssh.com/">sshd</a>。这里，你可以禁用<em>root</em>访问旧的协议，<a href="http://www.x.org/">X11</a>转发等。一般的见解是，你限制越多的远程访问，你的系统对于潜在的攻击来说就越安全。如果你打算暴露你的<a href="http://www.openssh.com/">sshd</a>到英特网，你可能要调整你的<em>hosts.allow</em>和<em>hosts.deny</em>文件。有很多强化服务器和<a href="http://en.wikipedia.org/wiki/SSH">ssh</a>的指南，这里就不讲细节了。</p>
+
+<p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
+
+<blockquote><p>$ ssh <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#117;&#115;&#101;&#x72;&#64;&#49;&#x39;&#50;&#46;&#x31;&#54;&#x38;&#46;&#49;&#46;&#x31;&#48;&#48;">&#117;&#x73;&#x65;&#114;&#64;&#49;&#57;&#50;&#46;&#x31;&#54;&#x38;&#46;&#x31;&#46;&#49;&#48;&#48;</a>   </br>
+user@192.168.1.100′s password:</p></blockquote>
+
+<p>输入密码，你就可以完全访问远程系统了。
+便捷的安全拷贝命令 – scp，也以同样的方式工作。要拷贝<em>test.txt</em>文件到用户的远程主目录，简单地输入：</p>
+
+<blockquote><p>$ scp test.txt user@192.168.1.100:</p></blockquote>
+
+<p>你将会被提示输入密码。你也可以同样的拷贝远程系统的文件到本地。写明的命令演示了怎么样拷贝一个完全路径的文件到本地机器：</p>
+
+<blockquote><p>$ scp user@192.168.1.100:/var/log/messages remote-message</p></blockquote>
+
+<p>这两个命令意味着你可以自由地在机器之间拷贝文件。而[sshfs][sshfs_site]作为一个可以挂载的文件系统提供了这样的功能。在进入怎样设置sshfs之前，我们来快速看看什么是sshfs。</p>
+
+<p>sshfs是用<a href="http://fuse.sourceforge.net/">FUSE</a>，以及依赖ssh的<a href="http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">sftp</a>部分来访问远程机器。作为一个远程文件访问协议，sshfs不是非常好，例如，多用户同时写入同一文件，将造成损坏。而优点是继承了安全性和容易建立。</p>
+
+<p>那么，怎么用呢？让我们来看一个非常简短的示例。</p>
+
+<blockquote><p>$ sshfs user@192.168.1.100: remote-home   </br>
+$ ls remote-home   </br>
+Desktop  Documents  Downloads  Music  </br>
+$ fusermount -u remote-home</p></blockquote>
+
+<p>初始的sshfs命令挂载用户远程的主目录到<em>remote-home</em>。你可以在冒号后指定另一个路径来挂载远程文件系统的任何一个部分。访问仅仅受用户的访问权限限制。</p>
+
+<p>在挂载的文件夹上使用ls或其他原始命令，就像远程主目录被本地挂载一样。所有的工具都工作，例如你可以登录到你的远程机器，使用你本地安装的构建工具构建软件。</p>
+
+<p>要卸载文件系统，使用FUSE工具包中的<strong>fusermount</strong>命令。</p>
+
+<p>总结，sshfs是一个容易建立的远程文件访问工具。如果涉及多个用户，它应该被小心使用。它使得可以易如反掌地临时访问远程文件系统，也方便从虚拟机挂载文件系统来访问和监视，也方便远程安装，编译和调试。总之，是我一直保留在我的工具箱中的工具之一。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Earth在Linux下字体显示问题]]></title>
+    <link href="http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html"/>
+    <updated>2009-12-05T00:48:16+08:00</updated>
+    <id>http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux</id>
+    <content type="html"><![CDATA[<p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
+
+<p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
+
+<!-- more -->
+
+
+<p><img src="http://mengzyou.github.io/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
+
+<p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
+
+<p>原来是由于Google Earth自带的Qt库的问题，所以解决方法就是删除掉安装目录里的Qt库，让程序使用系统安装的Qt库，当然前提是系统安装了Qt库。因此简单的执行如下命令：</p>
+
+<blockquote><p>$ cd ~/google-earth  </br>
+$ rm libQt*</p></blockquote>
+
+<p>然后再启动google earth，OK，显示正常！！</p>
+
+<p><img src="http://mengzyou.github.io/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
 ]]></content>
   </entry>
   

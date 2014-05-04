@@ -128,7 +128,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#116;&#x65;&#x73;&#116;&#64;&#116;&#101;&#115;&#116;&#46;&#99;&#x6f;&#109;">&#116;&#101;&#115;&#116;&#x40;&#x74;&#x65;&#x73;&#116;&#46;&#99;&#111;&#109;</a> <br/>
+user anonymous <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#116;&#x65;&#115;&#x74;&#64;&#116;&#101;&#115;&#116;&#46;&#99;&#111;&#x6d;">&#x74;&#101;&#115;&#x74;&#x40;&#x74;&#x65;&#115;&#x74;&#x2e;&#x63;&#111;&#x6d;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
@@ -235,24 +235,46 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mengzyou">@mengzyou</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mengzyou',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
 <section class="googleplus">
   <h1>
     <a href="https://plus.google.com/mengz.you@gmail.com?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-48.png" width="48" height="48">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
       Google+
     </a>
   </h1>
 </section>
 
 
-<section>
-    <h1>
-        <a href="/about" style="text-decoration:none">
-            <img src="/images/me_logo-48.png" width="48" height="48">
-            About Me
-        </a>
-    </h1>
-</section>
 
   
 </aside>

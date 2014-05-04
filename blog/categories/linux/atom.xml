@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Mengz You's blogger.]]></title>
   <link href="http://mengzyou.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://mengzyou.github.io/"/>
-  <updated>2014-05-04T14:19:01+08:00</updated>
+  <updated>2014-05-04T14:37:20+08:00</updated>
   <id>http://mengzyou.github.io/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -231,7 +231,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x74;&#x65;&#x73;&#116;&#x40;&#116;&#x65;&#115;&#116;&#x2e;&#x63;&#x6f;&#109;">&#x74;&#x65;&#x73;&#x74;&#64;&#x74;&#101;&#115;&#x74;&#46;&#x63;&#111;&#x6d;</a> <br/>
+user anonymous <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#116;&#101;&#x73;&#x74;&#64;&#x74;&#x65;&#x73;&#116;&#x2e;&#99;&#111;&#x6d;">&#x74;&#101;&#x73;&#x74;&#64;&#x74;&#x65;&#x73;&#116;&#46;&#x63;&#111;&#109;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
@@ -264,7 +264,7 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#117;&#115;&#101;&#x72;&#64;&#x31;&#x39;&#x32;&#46;&#x31;&#x36;&#x38;&#46;&#49;&#46;&#49;&#x30;&#48;">&#x75;&#115;&#x65;&#114;&#x40;&#49;&#57;&#50;&#x2e;&#49;&#x36;&#56;&#x2e;&#49;&#46;&#49;&#x30;&#48;</a>   </br>
+<blockquote><p>$ ssh <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#117;&#115;&#101;&#x72;&#x40;&#x31;&#57;&#50;&#46;&#49;&#x36;&#x38;&#46;&#x31;&#46;&#x31;&#48;&#x30;">&#117;&#x73;&#101;&#x72;&#x40;&#49;&#57;&#50;&#x2e;&#x31;&#x36;&#56;&#x2e;&#x31;&#x2e;&#x31;&#48;&#48;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。

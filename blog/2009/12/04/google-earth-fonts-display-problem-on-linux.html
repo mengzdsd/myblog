@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Life - Mengz You's blogger.</title>
+  <title>Google Earth在Linux下字体显示问题 - Mengz You's blogger.</title>
   <meta name="author" content="Mengz You">
 
   
-  <meta name="description" content="Category: Life">
+  <meta name="description" content="记录解决Google Earth无法显示中文字符的方法">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mengzyou.github.ioblog/categories/life/index.html">
+  <link rel="canonical" href="http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mengz You's blogger." type="application/atom+xml">
@@ -66,88 +66,144 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Life</h1>
+    
+      <h1 class="entry-title">Google Earth在Linux下字体显示问题</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-04T16:48:16+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
 
-  
-  <h2>2014</h2>
+<p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
 
-<article>
-  
-<h1><a href="/blog/2014/01/02/start.html">开始</a></h1>
-<time datetime="2014-01-02T13:33:20+00:00" pubdate><span class='month'>Jan</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/life/'>Life</a></span>
-</footer>
+<!-- more -->
 
 
-</article>
+<p><img src="/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
 
+<p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
 
+<p>原来是由于Google Earth自带的Qt库的问题，所以解决方法就是删除掉安装目录里的Qt库，让程序使用系统安装的Qt库，当然前提是系统安装了Qt库。因此简单的执行如下命令：</p>
 
-  
-  <h2>2011</h2>
+<blockquote><p>$ cd ~/google-earth  </br>
+$ rm libQt*</p></blockquote>
 
-<article>
-  
-<h1><a href="/blog/2011/05/02/travel-goteborg.html">哥德堡之行</a></h1>
-<time datetime="2011-05-02T04:48:11+00:00" pubdate><span class='month'>May</span> <span class='day'>02</span> <span class='year'>2011</span></time>
+<p>然后再启动google earth，OK，显示正常！！</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/life/'>Life</a></span>
-</footer>
-
-
-</article>
-
+<p><img src="/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Mengz You</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-04T16:48:16+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>Linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html" data-via="mengzyou" data-counturl="http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/05/02/travel-goteborg.html" title="Next Post: 哥德堡之行">哥德堡之行 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
 <aside class="sidebar">
   
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
     
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
+      <li class="post">
+        <a href="/blog/2014/05/20/abandon-digikam-4.html">放弃使用digikam 4.0版</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/28/trans-secrets-taking-dog-portraits.html">【翻译】来自Elke Vogelsang拍摄惊艳狗狗肖像的秘密</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/02/start.html">开始</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html">【翻译】如何在Unix Shell脚本中使用ftp下载文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/15/use-data-card-on-opensuse.html">在openSUSE上使用3G数据卡</a>
+      </li>
+    
   </ul>
-  
-  <a href="https://github.com/mengzyou">@mengzyou</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'mengzyou',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
-
 
 <section class="googleplus">
   <h1>
@@ -158,12 +214,6 @@
   </h1>
 </section>
 
-
-
-<section>
-    <a class="twitter-timeline" href="https://twitter.com/mengzyou" data-widget-id="461816712795406337">@mengzyou 的推文</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</section>
 
 <section>
     <h1>
@@ -192,7 +242,10 @@
       var disqus_shortname = 'mengzyougithubio';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html';
+        var disqus_url = 'http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

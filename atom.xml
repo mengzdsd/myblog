@@ -4,7 +4,7 @@
   <title><![CDATA[Mengz You's blogger.]]></title>
   <link href="http://mengzyou.github.io/atom.xml" rel="self"/>
   <link href="http://mengzyou.github.io/"/>
-  <updated>2014-05-14T17:49:01+08:00</updated>
+  <updated>2014-05-20T10:03:31+00:00</updated>
   <id>http://mengzyou.github.io/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -14,9 +14,40 @@
 
   
   <entry>
+    <title type="html"><![CDATA[放弃使用digikam 4.0版]]></title>
+    <link href="http://mengzyou.github.io/blog/2014/05/20/abandon-digikam-4.html"/>
+    <updated>2014-05-20T09:12:35+00:00</updated>
+    <id>http://mengzyou.github.io/blog/2014/05/20/abandon-digikam-4</id>
+    <content type="html"><![CDATA[<p>最近<a href="http://www.digikam.org/">digikam</a>发布最新的4.0版： <br/>
+&ndash; 一个新的工具专注于组织整个标签层级； <br/>
+&ndash; 一个新的维护国内工具专注于分析图像质量和自动使用Pick Lables来自动标签； <br/>
+&ndash; 为了后面切换所有的digikam代码到Qt5，Showfoto的缩略兰已经移植到了Qt的model/view； <br/>
+&ndash; 修复了一些导入工具的长期问题； <br/>
+&ndash; 该版本丢弃了最后的Qt3支持的类，全部移植到了Qt4的model/view； <br/>
+&ndash; 改版还包含了多CPU支持，支持一些需要大量运算的工具。</p>
+
+<!-- more -->
+
+
+<p>详细信息可参看 <a href="http://www.digikam.org/node/713">http://www.digikam.org/node/713</a></p>
+
+<p>由于之前在使用3.5版本的时候，<a href="http://www.digikam.org/node/349">GPSSync</a>插件总是导致digikam崩溃，所以想尝试下升级到4.0版，看是否解决了这个问题。 <br/>
+不过没想到升级到4.0之后，GPSSync的问题没有解决，反而有几个操作不习惯： <br/>
+1. 在一个照片文件夹内右键一个照片，选择使用showfoto打开，在3.5中，会默认导入此文件夹下的所有照片，但是在4.0会只打开一张照片（我的习惯是每次相机拍完照，都会使用showfoto调整所有照片）； <br/>
+2. 在showfoto中，调整完一张照片后，3.5版单击侧边照片导航栏里的其他照片，就可将其导入编辑窗口，但是在4.0中，需要双击；
+3. 在showfoto中，<em>Delete</em>键删除一张照片，在3.5中，它的缩略图将会从侧边栏消失，4.0中将会保留缩略图； <br/>
+4. 最大的一个问题是，修改了一照片后，在点击保存之前，双击选了其他照片，会提示是否要保存修改，确定覆盖后，在3.5回覆修改的原始照片，但是在4.0居然会覆盖后面双击选中的照片。</p>
+
+<p>上面是我在使用过程中发现的一些情况了，当然这些使用也许对于其他人是不错的，但是我不习惯，所以最后放弃了4.0版，又回到了3.5版。</p>
+
+<p>至于那个GPSSync插件的问题，我也在<a href="http://www.kde.org">KDE</a>上报了一个<a href="https://bugs.kde.org/show_bug.cgi?id=334817">Bug</a>，不过好像没人确认问题。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[【翻译】来自Elke Vogelsang拍摄惊艳狗狗肖像的秘密]]></title>
     <link href="http://mengzyou.github.io/blog/2014/03/28/trans-secrets-taking-dog-portraits.html"/>
-    <updated>2014-03-28T21:01:56+08:00</updated>
+    <updated>2014-03-28T13:01:56+00:00</updated>
     <id>http://mengzyou.github.io/blog/2014/03/28/trans-secrets-taking-dog-portraits</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://500px.com/blog/1091/the-secrets-to-taking-awesome-dog-portraits-by-elke-vogelsang">The Secrets To Taking Awesome Dog Portraits By Elke Vogelsang</a></p>
 
@@ -157,7 +188,7 @@
   <entry>
     <title type="html"><![CDATA[开始]]></title>
     <link href="http://mengzyou.github.io/blog/2014/01/02/start.html"/>
-    <updated>2014-01-02T21:33:20+08:00</updated>
+    <updated>2014-01-02T13:33:20+00:00</updated>
     <id>http://mengzyou.github.io/blog/2014/01/02/start</id>
     <content type="html"><![CDATA[<p>我的 2013 ！</p>
 
@@ -167,9 +198,64 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
+    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
+    <updated>2013-01-15T21:33:20+00:00</updated>
+    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
+
+<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
+答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h4>使用 “HERE document” 的 FTP 脚本</h4>
+
+<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
+user USERNAME PASSWORD <br/>
+binary <br/>
+cd PATH <br/>
+mget PATH <br/>
+SCRIPTEND</p></blockquote>
+
+<p>在上面的ftp脚本中： <br/>
+*   ftp : ftp命令 <br/>
+*   -i : 不用交互式提示 <br/>
+*   -n : 不用自动登录 <br/>
+*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
+*   binary : 为二进制文件传输设置模式 <br/>
+*   cd PATH : 在远程机器上改变目录 <br/>
+*   mget PATH : 获取指定文件 <br/>
+*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
+
+<h4>在Shell脚本中使用 FTP 脚本</h4>
+
+<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
+
+<blockquote><p>\$ cat download.sh <br/>
+ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
+user anonymous <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x74;&#101;&#x73;&#x74;&#64;&#116;&#x65;&#115;&#x74;&#x2e;&#99;&#111;&#x6d;">&#116;&#101;&#x73;&#116;&#64;&#x74;&#x65;&#115;&#116;&#46;&#x63;&#x6f;&#x6d;</a> <br/>
+binary <br/>
+cd cpan/authors/id/P/PM/PMQS/ <br/>
+mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
+SCRIPTEND</p></blockquote>
+
+<p>执行这个脚本来下载文件</p>
+
+<blockquote><p>\$ sh download.sh <br/>
+\$ ls
+download.sh <br/>
+Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[在openSUSE上使用3G数据卡]]></title>
     <link href="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html"/>
-    <updated>2013-01-15T21:33:20+08:00</updated>
+    <updated>2013-01-15T13:33:20+00:00</updated>
     <id>http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse</id>
     <content type="html"><![CDATA[<p>今天这篇是因为想把怎么成功连上网的过程给记录下来。真应该感谢家里的宽带坏掉了，还有手里正好有一个华为的联通3G数据上网卡，所以就折腾了一下，这都是废话了！</p>
 
@@ -345,64 +431,9 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
-    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
-    <updated>2013-01-15T21:33:20+08:00</updated>
-    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
-    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
-
-<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
-答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h4>使用 “HERE document” 的 FTP 脚本</h4>
-
-<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
-user USERNAME PASSWORD <br/>
-binary <br/>
-cd PATH <br/>
-mget PATH <br/>
-SCRIPTEND</p></blockquote>
-
-<p>在上面的ftp脚本中： <br/>
-*   ftp : ftp命令 <br/>
-*   -i : 不用交互式提示 <br/>
-*   -n : 不用自动登录 <br/>
-*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
-*   binary : 为二进制文件传输设置模式 <br/>
-*   cd PATH : 在远程机器上改变目录 <br/>
-*   mget PATH : 获取指定文件 <br/>
-*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
-
-<h4>在Shell脚本中使用 FTP 脚本</h4>
-
-<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
-
-<blockquote><p>\$ cat download.sh <br/>
-ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x74;&#x65;&#x73;&#x74;&#x40;&#x74;&#101;&#115;&#x74;&#x2e;&#x63;&#x6f;&#x6d;">&#116;&#101;&#x73;&#116;&#x40;&#116;&#x65;&#x73;&#x74;&#x2e;&#x63;&#111;&#x6d;</a> <br/>
-binary <br/>
-cd cpan/authors/id/P/PM/PMQS/ <br/>
-mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
-SCRIPTEND</p></blockquote>
-
-<p>执行这个脚本来下载文件</p>
-
-<blockquote><p>\$ sh download.sh <br/>
-\$ ls
-download.sh <br/>
-Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[【翻译】简便安全地访问远程文件]]></title>
     <link href="http://mengzyou.github.io/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
-    <updated>2011-06-30T13:58:46+08:00</updated>
+    <updated>2011-06-30T05:58:46+00:00</updated>
     <id>http://mengzyou.github.io/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.linuxjournal.com/content/accessing-remote-files-easy-and-secure">Accessing Remote Files Easily and Securely</a></p>
 
@@ -417,7 +448,7 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x75;&#115;&#x65;&#x72;&#x40;&#x31;&#x39;&#50;&#46;&#x31;&#x36;&#x38;&#x2e;&#49;&#x2e;&#49;&#48;&#48;">&#x75;&#x73;&#101;&#x72;&#64;&#x31;&#x39;&#x32;&#x2e;&#49;&#54;&#x38;&#46;&#x31;&#x2e;&#x31;&#48;&#48;</a>   </br>
+<blockquote><p>$ ssh <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x75;&#115;&#101;&#x72;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#x36;&#56;&#46;&#49;&#x2e;&#49;&#x30;&#x30;">&#117;&#115;&#x65;&#114;&#64;&#49;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#x31;&#46;&#x31;&#48;&#x30;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -453,7 +484,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[哥德堡之行]]></title>
     <link href="http://mengzyou.github.io/blog/2011/05/02/travel-goteborg.html"/>
-    <updated>2011-05-02T12:48:11+08:00</updated>
+    <updated>2011-05-02T04:48:11+00:00</updated>
     <id>http://mengzyou.github.io/blog/2011/05/02/travel-goteborg</id>
     <content type="html"><![CDATA[<p>昨天周六，来瑞典的最后一个周末啦！所以决定要去哥德堡玩一玩。</p>
 
@@ -496,9 +527,9 @@ $ fusermount -u remote-home</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[Google Earth在Linux下字体显示问题]]></title>
-    <link href="http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html"/>
-    <updated>2009-12-05T00:48:16+08:00</updated>
-    <id>http://mengzyou.github.io/blog/2009/12/05/google-earth-fonts-display-problem-on-linux</id>
+    <link href="http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html"/>
+    <updated>2009-12-04T16:48:16+00:00</updated>
+    <id>http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux</id>
     <content type="html"><![CDATA[<p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
 
 <p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>

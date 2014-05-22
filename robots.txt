@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://mengzyou.github.io/sitemap.xml 
+Sitemap: http://youmz.cn/sitemap.xml 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Mengz You's blogger.]]></title>
-  <link href="http://mengzyou.github.io/atom.xml" rel="self"/>
-  <link href="http://mengzyou.github.io/"/>
-  <updated>2014-05-20T10:03:31+00:00</updated>
-  <id>http://mengzyou.github.io/</id>
+  <link href="http://youmz.cn/atom.xml" rel="self"/>
+  <link href="http://youmz.cn/"/>
+  <updated>2014-05-22T08:21:06+00:00</updated>
+  <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[放弃使用digikam 4.0版]]></title>
-    <link href="http://mengzyou.github.io/blog/2014/05/20/abandon-digikam-4.html"/>
+    <link href="http://youmz.cn/blog/2014/05/20/abandon-digikam-4.html"/>
     <updated>2014-05-20T09:12:35+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2014/05/20/abandon-digikam-4</id>
+    <id>http://youmz.cn/blog/2014/05/20/abandon-digikam-4</id>
     <content type="html"><![CDATA[<p>最近<a href="http://www.digikam.org/">digikam</a>发布最新的4.0版： <br/>
 &ndash; 一个新的工具专注于组织整个标签层级； <br/>
 &ndash; 一个新的维护国内工具专注于分析图像质量和自动使用Pick Lables来自动标签； <br/>
@@ -46,9 +46,9 @@
   
   <entry>
     <title type="html"><![CDATA[【翻译】来自Elke Vogelsang拍摄惊艳狗狗肖像的秘密]]></title>
-    <link href="http://mengzyou.github.io/blog/2014/03/28/trans-secrets-taking-dog-portraits.html"/>
+    <link href="http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits.html"/>
     <updated>2014-03-28T13:01:56+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2014/03/28/trans-secrets-taking-dog-portraits</id>
+    <id>http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://500px.com/blog/1091/the-secrets-to-taking-awesome-dog-portraits-by-elke-vogelsang">The Secrets To Taking Awesome Dog Portraits By Elke Vogelsang</a></p>
 
 <p>在总部这里，我们心中总是对狗狗有种特殊的情感。因此当我们偶然发现到<a href="http://500px.com/Wieselblitz">Elke Vogelsang</a>的狗狗肖像照片时，我们立刻被打败啦！在捕捉最具表现力和有趣的四条腿主题时，她的的能力是非凡的。在她大部分的特写中，没一个肖像都洋溢着亲密感，幽默的神情，也体现了摄影师自身的技术。</p>
@@ -187,9 +187,9 @@
   
   <entry>
     <title type="html"><![CDATA[开始]]></title>
-    <link href="http://mengzyou.github.io/blog/2014/01/02/start.html"/>
+    <link href="http://youmz.cn/blog/2014/01/02/start.html"/>
     <updated>2014-01-02T13:33:20+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2014/01/02/start</id>
+    <id>http://youmz.cn/blog/2014/01/02/start</id>
     <content type="html"><![CDATA[<p>我的 2013 ！</p>
 
 <div class="g-post" data-href="https://plus.google.com/110469673943058147906/posts/8trcDpT5Ez8"></div>
@@ -199,9 +199,9 @@
   
   <entry>
     <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
-    <link href="http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
+    <link href="http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
     <updated>2013-01-15T21:33:20+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
+    <id>http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
 
 <p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
@@ -237,7 +237,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x74;&#101;&#x73;&#x74;&#64;&#116;&#x65;&#115;&#x74;&#x2e;&#99;&#111;&#x6d;">&#116;&#101;&#x73;&#116;&#64;&#x74;&#x65;&#115;&#116;&#46;&#x63;&#x6f;&#x6d;</a> <br/>
+user anonymous <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#116;&#x65;&#x73;&#116;&#x40;&#116;&#x65;&#115;&#116;&#46;&#99;&#x6f;&#109;">&#x74;&#101;&#x73;&#116;&#x40;&#x74;&#101;&#115;&#116;&#x2e;&#99;&#111;&#x6d;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
@@ -254,9 +254,9 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[在openSUSE上使用3G数据卡]]></title>
-    <link href="http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse.html"/>
+    <link href="http://youmz.cn/blog/2013/01/15/use-data-card-on-opensuse.html"/>
     <updated>2013-01-15T13:33:20+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2013/01/15/use-data-card-on-opensuse</id>
+    <id>http://youmz.cn/blog/2013/01/15/use-data-card-on-opensuse</id>
     <content type="html"><![CDATA[<p>今天这篇是因为想把怎么成功连上网的过程给记录下来。真应该感谢家里的宽带坏掉了，还有手里正好有一个华为的联通3G数据上网卡，所以就折腾了一下，这都是废话了！</p>
 
 <h3>工具准备</h3>
@@ -432,9 +432,9 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[【翻译】简便安全地访问远程文件]]></title>
-    <link href="http://mengzyou.github.io/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
+    <link href="http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
     <updated>2011-06-30T05:58:46+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely</id>
+    <id>http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.linuxjournal.com/content/accessing-remote-files-easy-and-secure">Accessing Remote Files Easily and Securely</a></p>
 
 <p>安全shell – <a href="http://en.wikipedia.org/wiki/SSH">ssh</a>以及<a href="http://en.wikipedia.org/wiki/Secure_copy">scp</a>是我每天基本上都会用到的工具。当在多系统上工作时，不设置<a href="http://www.samba.org/">SAMBA</a>或者<a href="http://en.wikipedia.org/wiki/Network_File_System">NFS</a>就能在机器之间移动文件是非常便利的。而你所需要的就是打开安全shell守护进程 – <a href="http://www.openssh.com/">sshd</a> 。</p>
@@ -448,7 +448,7 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x75;&#115;&#101;&#x72;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#x36;&#56;&#46;&#49;&#x2e;&#49;&#x30;&#x30;">&#117;&#115;&#x65;&#114;&#64;&#49;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#x31;&#46;&#x31;&#48;&#x30;</a>   </br>
+<blockquote><p>$ ssh <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x75;&#115;&#101;&#114;&#x40;&#x31;&#57;&#x32;&#x2e;&#49;&#54;&#56;&#x2e;&#49;&#x2e;&#x31;&#x30;&#x30;">&#x75;&#x73;&#101;&#x72;&#x40;&#x31;&#57;&#x32;&#x2e;&#49;&#x36;&#x38;&#46;&#49;&#x2e;&#x31;&#48;&#48;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -483,9 +483,9 @@ $ fusermount -u remote-home</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[哥德堡之行]]></title>
-    <link href="http://mengzyou.github.io/blog/2011/05/02/travel-goteborg.html"/>
+    <link href="http://youmz.cn/blog/2011/05/02/travel-goteborg.html"/>
     <updated>2011-05-02T04:48:11+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2011/05/02/travel-goteborg</id>
+    <id>http://youmz.cn/blog/2011/05/02/travel-goteborg</id>
     <content type="html"><![CDATA[<p>昨天周六，来瑞典的最后一个周末啦！所以决定要去哥德堡玩一玩。</p>
 
 <p>我们有四个同事一起去，周五下午就把票买好了！有意思的是，瑞典这边20到25岁还可以买“青年票”，比成人票便宜很多，正好我和另一个同事25岁（其实再过十几天我就26啦！）。所以只花了163kr到哥德堡，而另外两个同事却花了400kr 。</p>
@@ -527,9 +527,9 @@ $ fusermount -u remote-home</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[Google Earth在Linux下字体显示问题]]></title>
-    <link href="http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html"/>
+    <link href="http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html"/>
     <updated>2009-12-04T16:48:16+00:00</updated>
-    <id>http://mengzyou.github.io/blog/2009/12/04/google-earth-fonts-display-problem-on-linux</id>
+    <id>http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux</id>
     <content type="html"><![CDATA[<p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
 
 <p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
@@ -537,7 +537,7 @@ $ fusermount -u remote-home</p></blockquote>
 <!-- more -->
 
 
-<p><img src="http://mengzyou.github.io/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
+<p><img src="http://youmz.cn/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
 
 <p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
 
@@ -548,7 +548,7 @@ $ rm libQt*</p></blockquote>
 
 <p>然后再启动google earth，OK，显示正常！！</p>
 
-<p><img src="http://mengzyou.github.io/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
+<p><img src="http://youmz.cn/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
 ]]></content>
   </entry>
   

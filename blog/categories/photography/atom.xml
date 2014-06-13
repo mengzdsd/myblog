@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Photography | Mengz You's blogger.]]></title>
   <link href="http://youmz.cn/blog/categories/photography/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-06-13T08:22:44+00:00</updated>
+  <updated>2014-06-13T08:31:28+00:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -18,13 +18,17 @@
     <link href="http://youmz.cn/blog/2014/05/20/abandon-digikam-4.html"/>
     <updated>2014-05-20T09:12:35+00:00</updated>
     <id>http://youmz.cn/blog/2014/05/20/abandon-digikam-4</id>
-    <content type="html"><![CDATA[<p>最近<a href="http://www.digikam.org/">digikam</a>发布最新的4.0版： <br/>
-&ndash; 一个新的工具专注于组织整个标签层级； <br/>
-&ndash; 一个新的维护国内工具专注于分析图像质量和自动使用Pick Lables来自动标签； <br/>
-&ndash; 为了后面切换所有的digikam代码到Qt5，Showfoto的缩略兰已经移植到了Qt的model/view； <br/>
-&ndash; 修复了一些导入工具的长期问题； <br/>
-&ndash; 该版本丢弃了最后的Qt3支持的类，全部移植到了Qt4的model/view； <br/>
-&ndash; 改版还包含了多CPU支持，支持一些需要大量运算的工具。</p>
+    <content type="html"><![CDATA[<p>最近<a href="http://www.digikam.org/">digikam</a>发布最新的4.0版：</p>
+
+<ul>
+<li>一个新的工具专注于组织整个标签层级；</li>
+<li>一个新的维护国内工具专注于分析图像质量和自动使用Pick Lables来自动标签；</li>
+<li>为了后面切换所有的digikam代码到Qt5，Showfoto的缩略兰已经移植到了Qt的model/view；</li>
+<li>修复了一些导入工具的长期问题；</li>
+<li>该版本丢弃了最后的Qt3支持的类，全部移植到了Qt4的model/view；</li>
+<li>改版还包含了多CPU支持，支持一些需要大量运算的工具。</li>
+</ul>
+
 
 <!-- more -->
 
@@ -32,11 +36,15 @@
 <p>详细信息可参看 <a href="http://www.digikam.org/node/713">http://www.digikam.org/node/713</a></p>
 
 <p>由于之前在使用3.5版本的时候，<a href="http://www.digikam.org/node/349">GPSSync</a>插件总是导致digikam崩溃，所以想尝试下升级到4.0版，看是否解决了这个问题。 <br/>
-不过没想到升级到4.0之后，GPSSync的问题没有解决，反而有几个操作不习惯： <br/>
-1. 在一个照片文件夹内右键一个照片，选择使用showfoto打开，在3.5中，会默认导入此文件夹下的所有照片，但是在4.0会只打开一张照片（我的习惯是每次相机拍完照，都会使用showfoto调整所有照片）； <br/>
-2. 在showfoto中，调整完一张照片后，3.5版单击侧边照片导航栏里的其他照片，就可将其导入编辑窗口，但是在4.0中，需要双击；
-3. 在showfoto中，<em>Delete</em>键删除一张照片，在3.5中，它的缩略图将会从侧边栏消失，4.0中将会保留缩略图； <br/>
-4. 最大的一个问题是，修改了一照片后，在点击保存之前，双击选了其他照片，会提示是否要保存修改，确定覆盖后，在3.5回覆修改的原始照片，但是在4.0居然会覆盖后面双击选中的照片。</p>
+不过没想到升级到4.0之后，GPSSync的问题没有解决，反而有几个操作不习惯：</p>
+
+<ol>
+<li>在一个照片文件夹内右键一个照片，选择使用showfoto打开，在3.5中，会默认导入此文件夹下的所有照片，但是在4.0会只打开一张照片（我的习惯是每次相机拍完照，都会使用showfoto调整所有照片）；</li>
+<li>在showfoto中，调整完一张照片后，3.5版单击侧边照片导航栏里的其他照片，就可将其导入编辑窗口，但是在4.0中，需要双击；</li>
+<li>在showfoto中，<em>Delete</em>键删除一张照片，在3.5中，它的缩略图将会从侧边栏消失，4.0中将会保留缩略图；</li>
+<li>最大的一个问题是，修改了一照片后，在点击保存之前，双击选了其他照片，会提示是否要保存修改，确定覆盖后，在3.5回覆修改的原始照片，但是在4.0居然会覆盖后面双击选中的照片。</li>
+</ol>
+
 
 <p>上面是我在使用过程中发现的一些情况了，当然这些使用也许对于其他人是不错的，但是我不习惯，所以最后放弃了4.0版，又回到了3.5版。</p>
 

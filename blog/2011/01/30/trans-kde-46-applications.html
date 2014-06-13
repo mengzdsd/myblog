@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Google Earth在Linux下字体显示问题 - Mengz You's blogger.</title>
+  <title>【翻译】KDE 4.6 - 应用更新 - Mengz You's blogger.</title>
   <meta name="author" content="Mengz You">
 
   
-  <meta name="description" content="记录解决Google Earth无法显示中文字符的方法">
+  <meta name="description" content="【原文】KDE Releases Applications 4.6.0 上一篇介绍了KDE 4.6在工作空间（Workspaces）方面的一些更新。这一篇，我们来看看在应用程序方面，KDE4.6带来了哪些更新。 很多 KDE 应用程序小组都发布了新的版本。特别的亮点包括： 在虚拟地球（Marble &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html">
+  <link rel="canonical" href="http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mengz You's blogger." type="application/atom+xml">
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">Google Earth在Linux下字体显示问题</h1>
+      <h1 class="entry-title">【翻译】KDE 4.6 - 应用更新</h1>
     
     
       <p class="meta">
@@ -86,32 +86,86 @@
   
 
 
-<time datetime="2009-12-04T16:48:16+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+<time datetime="2011-01-30T07:57:50+00:00" pubdate data-updated="true">Jan 30<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
+<div class="entry-content"><p>【原文】<a href="http://www.kde.org/announcements/4.6/applications.php">KDE Releases Applications 4.6.0</a></p>
 
-<p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
+<p>上一篇介绍了KDE 4.6在工作空间（Workspaces）方面的一些更新。这一篇，我们来看看在应用程序方面，KDE4.6带来了哪些更新。</p>
+
+<p>很多 KDE 应用程序小组都发布了新的版本。特别的亮点包括： 在虚拟地球（Marble） 中选路能力的改进； 以及在 KDE 文件管理器（Dolhin）里使用文件元数据来过滤和搜索的改进。KDE 游戏集也带来了许多增强； 图片浏览器（Gwenview）和截屏程序（KSnapshot）具备了将图片及时分享到许多流行的社交网站的能力。下面来看看具体内容：</p>
 
 <!-- more -->
 
 
-<p><img src="/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
+<h3>Dolphin 添加了称为 Faceted 的浏览功能</h3>
 
-<p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
+<p>Kfind和Dolphin的搜索界面已经统一到了一个新的简单的搜索栏。Faceted浏览首次公开亮相了过滤面板的形式，这使得你可以轻松地使用文件的元数据索引它们。一个新的侧边烂允许层次搜索，也就是使用元数据作为额外过滤来增强传统的文件浏览。</p>
 
-<p>原来是由于Google Earth自带的Qt库的问题，所以解决方法就是删除掉安装目录里的Qt库，让程序使用系统安装的Qt库，当然前提是系统安装了Qt库。因此简单的执行如下命令：</p>
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/46-a05.png" alt="Dolphin's faceted browsing lets you use multiple filters to find files by metadata" /></p>
 
-<blockquote><p>$ cd ~/google-earth  </br>
-$ rm libQt*</p></blockquote>
+<ul>
+<li>列视图改进了可用性。现在列的宽度可以自动或者由用户来调整，文件选择使用橡皮条指示，以及导航到临近的列不再需要水平滚动条了。</li>
+<li>为了完成将 KDE 的开发从 SVN 迁移到 Git，Dolphin 新增了一个 Git 插件功能，可以直接从 GUI 更新和提交代码。 当然，SVN 插件仍然可用。</li>
+<li>服务菜单多方面的改进（具体可以查看<a href="http://ppenz.blogspot.com/2010/11/improved-service-menus.html">http://ppenz.blogspot.com/2010/11/improved-service-menus.html</a>)</li>
+</ul>
 
-<p>然后再启动google earth，OK，显示正常！！</p>
 
-<p><img src="/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
+<h3>Kate 具备了SQL客户端功能</h3>
+
+<p>Kate，强大的文本编辑器，这次发布带来了大量闪光的新的功能。特别地，新版本提供了如下功能：</p>
+
+<ul>
+<li>在Kate下一次启动时恢复未保存的本地文件（支持交换文件）</li>
+<li>总是加载插件</li>
+<li>添加脚本到菜单以及绑定快捷键</li>
+<li>新的<a href="http://kate-editor.org/2010/07/29/katesql-a-new-plugin-for-kate/">SQL查询插件</a>给Kate带来了基本的 SQL 客户端的功能，以及通过Qt的SQL模块支持很多种类的数据库</li>
+<li>一个新的 GNU 调式（GDB）插件</li>
+<li>一个新的高亮选择文本插件</li>
+</ul>
+
+
+<h3>管理社交网络的图像应用程序</h3>
+
+<p>KDE的图像查看器Gwenview，添加了一个“分享”按钮来将图片导出到流行的图片分享和社交网站。</p>
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-a03.png" alt="Gwenview can share images to many popular social networking sites" /></p>
+
+<p>KSnapshot现在可以进行套索区域截屏，可以选择包括鼠标指针，还有“发送到”按钮可以及时将截屏进行分享。</p>
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-a04.png" alt="KSnapshot can directly export screenshots to a number of 3rd party services" /></p>
+
+<p>许多其它 KDE 应用程序更新也带来了新的功能和修复了许多错误，同时也从 KDE 平台获得了最新的改进来增强速度和稳定x性。</p>
+
+<h3>Marble带你回家，由于OpenGL，KStars渲染更快</h3>
+
+<p>KDE的虚拟地球（Marble），继续因其改进的选路计划支持而发亮，现在也允许选路数据的下载。同时，它的移动版本MarbleToGo能进行路线规划导航。<a href="http://dot.kde.org">dot.kde.org</a>上有图片和视频，可以到这里找到功能指导的演示。</p>
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-a01.png" alt="Marble’s advanced routing can use a variety of configurable backends" /></p>
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-a06.png" alt="The mobile version of Marble is a capable personal navigation tool" /></p>
+
+<p>KDE 的桌面天文馆，具备了使用 OpenGL 来渲染的可选支持，以 OpenGL 的能力来在硬件傻瓜你增强性能。</p>
+
+<h3>KDE游戏</h3>
+
+<ul>
+<li>Klickety，一个Clickomania游戏的改写版本，它也通过兼容模式取代了KSame。</li>
+<li>KGameRenderer框架统一了游戏主题，带来了一致性和平滑的感观。大约十几个 KDE 游戏已经移植到了这个新的架构，减少了内存使用，已经允许它们利用多核处理器。</li>
+<li>Palapeli新的剪贴猜谜游戏，将图像剪辑成不同的和看起来可信的小片，斜角效果使得这些小片呈现三维效果。</li>
+<li>Kajongg新改进的文档为新手解释了这个游戏。更多的只能机器人玩家，改进的可用性和可玩性，由于更好的瓦片处理使得这个传统的游戏更好玩。</li>
+</ul>
+
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-a02.png" alt="Palapeli, the KDE puzzle game, makes it easy to create jigsaws from your own images" /></p>
+
+<p>好了，关于 KDE 4.6 在应用程序方面的更新就介绍到这吧！</p>
+
+<p>如果想知道如何安装使用KDE应用程序，请到<a href="http://www.kde.org">KDE</a>了解更多信息。</p>
 </div>
 
 
@@ -134,12 +188,12 @@ $ rm libQt*</p></blockquote>
   
 
 
-<time datetime="2009-12-04T16:48:16+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+<time datetime="2011-01-30T07:57:50+00:00" pubdate data-updated="true">Jan 30<span>th</span>, 2011</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux/'>Linux</a>
+    <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/translation/'>Translation</a>
   
 </span>
 
@@ -175,8 +229,10 @@ $ rm libQt*</p></blockquote>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2011/01/29/trans-kde-46-workspaces.html" title="Previous Post: 【翻译】KDE 4.6 - 新工作空间（Wrokspaces）">&laquo; 【翻译】KDE 4.6 - 新工作空间（Wrokspaces）</a>
       
-        <a class="basic-alignment right" href="/blog/2011/01/29/trans-kde-46-workspaces.html" title="Next Post: 【翻译】KDE 4.6 - 新工作空间（Wrokspaces）">【翻译】KDE 4.6 - 新工作空间（Wrokspaces） &raquo;</a>
+      
+        <a class="basic-alignment right" href="/blog/2011/01/31/trans-kde-46-platform.html" title="Next Post: 【翻译】KDE 4.6 - 平台更新">【翻译】KDE 4.6 - 平台更新 &raquo;</a>
       
     </p>
   </footer>
@@ -259,8 +315,8 @@ $ rm libQt*</p></blockquote>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html';
-        var disqus_url = 'http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html';
+        var disqus_identifier = 'http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html';
+        var disqus_url = 'http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html';
         var disqus_script = 'embed.js';
       
     (function () {

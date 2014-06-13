@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Google Earth在Linux下字体显示问题 - Mengz You's blogger.</title>
+  <title>【翻译】KDE 4.6 - 新工作空间（Wrokspaces） - Mengz You's blogger.</title>
   <meta name="author" content="Mengz You">
 
   
-  <meta name="description" content="记录解决Google Earth无法显示中文字符的方法">
+  <meta name="description" content="【原文】Plasma Workspaces Put You in Control KDE在2011年1月26日通知发布了其最新版本4.6，带来了KDE Plasma工作空间，KDE应用程序和KDE平台的更新。这三个产品线各自提供了许多新的功能。 首先，我们来看看4. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html">
+  <link rel="canonical" href="http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mengz You's blogger." type="application/atom+xml">
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">Google Earth在Linux下字体显示问题</h1>
+      <h1 class="entry-title">【翻译】KDE 4.6 - 新工作空间（Wrokspaces）</h1>
     
     
       <p class="meta">
@@ -86,32 +86,68 @@
   
 
 
-<time datetime="2009-12-04T16:48:16+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+<time datetime="2011-01-29T07:31:10+00:00" pubdate data-updated="true">Jan 29<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
+<div class="entry-content"><p>【原文】<a href="http://www.kde.org/announcements/4.6/plasma.php">Plasma Workspaces Put You in Control</a></p>
 
-<p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
+<p>KDE在2011年1月26日通知发布了其最新版本4.6，带来了KDE Plasma工作空间，KDE应用程序和KDE平台的更新。这三个产品线各自提供了许多新的功能。</p>
 
 <!-- more -->
 
 
-<p><img src="/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-w09.png" alt="KDE Plasma Desktop, Gwenview and KRunner in 4.6" /></p>
 
-<p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
+<p>首先，我们来看看4.6版的Plasma工作空间带来了哪些更新。KDE Plasma带来了一个新的活动系统(Activites)，能够容易地将应用程序与一个特定的活动关联，比如工作和家庭任务。改进的电源管理增加了新的功能，但是提供了更简单的配置接口。Plasma 工作空间的窗口管理器 KWin 接纳了新的脚本，工作空间也接纳了视觉上的增强。Plasma Netbook，为移动设备做了优化，速度上有所增强，以及容易通过触摸屏使用。</p>
 
-<p>原来是由于Google Earth自带的Qt库的问题，所以解决方法就是删除掉安装目录里的Qt库，让程序使用系统安装的Qt库，当然前提是系统安装了Qt库。因此简单的执行如下命令：</p>
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/46-w10.png" alt="Plasma Desktop in 4.6.0" /></p>
 
-<blockquote><p>$ cd ~/google-earth  </br>
-$ rm libQt*</p></blockquote>
+<p>活动系统被重新设计，使得更容易使用。现在通过右键点击窗口标题，你可以使应用程序和文件成为一个活动的一部分。当你需要时，改变到该活动，Plasma工作空间将显示你所需要的。添加，重命名和移除活动的过程也被改进了。</p>
 
-<p>然后再启动google earth，OK，显示正常！！</p>
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/46-w01.png" alt="It is easy to associate applications with activities" /></p>
 
-<p><img src="/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
+<p>改进的电源管理，更简短以及高模块化的代码（之前代码量的十分之一），更容易维护以及允许插件来触发电源管理功能。新的用户配置接口使得电源设置更容易理解和管理。一个新的“Policy Agent”允许屏幕禁用功能，如当你正在观看电影时禁用通知或者关闭屏幕。</p>
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-w02.png" alt="The new simplified power management interface" /></p>
+
+<p>缓存窗口设置和仅刷新屏幕上需要的区域，由于这些重要的优化，KWin，窗口复合管理器，比以前更快，能与更多的图形驱动更好地配合。带来了：</p>
+
+<ul>
+<li>重要的性能优化</li>
+<li>更好的图形驱动性能检测</li>
+<li>展现窗口效果 – 现在窗口可以直接从这个预览关闭</li>
+</ul>
+
+
+<p>其他改进包括：</p>
+
+<ul>
+<li>现在程序启动通知处理更有效</li>
+<li>改进的通知系统。现在通过拖拽，通知弹出可以出现在屏幕的任意位置，通知历史和任务弹出看起来更干净，以及当进度通知被展开时，运行的下载有一个下载速度条</li>
+</ul>
+
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-w04.png" alt="You can now drag notifications to a convenient place on the desktop" /></p>
+
+<ul>
+<li><a href="http://i158.photobucket.com/albums/t120/wdawn/sjelf-1.png">Shelf小工具（widget)</a> – 当在一个面板中：自动获得弹出的大小，显示未读的邮件数和在线的联系人</li>
+<li>改进的面板中的数字时钟，现在其显示阴影文字，这提升了在一些背景和主题下的可读性</li>
+<li>现在任务栏（taskbar) 支持基本的启动：只需要拖拽程序的图标到任务栏，它将成为一个快捷启动方式。或者通过右键一个运行的程序使用高级菜单中的新选项将该程序订在任务栏</li>
+<li>Plasma Netbook 为更快的“搜索和运行”体验做了更多优化，以及在“Page One”报纸活动中更多触摸友好的行为</li>
+</ul>
+
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-w07.png" alt="The Plasma Netbook Search and Launch is faster" /></p>
+
+<p>Plasma工作空间中，其它显然的改进包括改变到Oxygen图标主题，以及由于完全重写的Oxygen GTK主题，使得不是构建在KDE平台应用更好地集成。</p>
+
+<p><img src="http://www.kde.org/announcements/4.6/screenshots/thumbs/46-w06.png" alt="The new Oxygen GTK theme helps to integrate non-KDE applications in a Plasma workspace" /></p>
+
+<p>如果你想尝试安装KDE 4.6和获取更多关于KDE的信息，请关注<a href="http://www.kde.org">www.kde.org</a> 。</p>
 </div>
 
 
@@ -134,12 +170,12 @@ $ rm libQt*</p></blockquote>
   
 
 
-<time datetime="2009-12-04T16:48:16+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+<time datetime="2011-01-29T07:31:10+00:00" pubdate data-updated="true">Jan 29<span>th</span>, 2011</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux/'>Linux</a>
+    <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/translation/'>Translation</a>
   
 </span>
 
@@ -175,8 +211,10 @@ $ rm libQt*</p></blockquote>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html" title="Previous Post: Google Earth在Linux下字体显示问题">&laquo; Google Earth在Linux下字体显示问题</a>
       
-        <a class="basic-alignment right" href="/blog/2011/01/29/trans-kde-46-workspaces.html" title="Next Post: 【翻译】KDE 4.6 - 新工作空间（Wrokspaces）">【翻译】KDE 4.6 - 新工作空间（Wrokspaces） &raquo;</a>
+      
+        <a class="basic-alignment right" href="/blog/2011/01/30/trans-kde-46-applications.html" title="Next Post: 【翻译】KDE 4.6 - 应用更新 ">【翻译】KDE 4.6 - 应用更新  &raquo;</a>
       
     </p>
   </footer>
@@ -259,8 +297,8 @@ $ rm libQt*</p></blockquote>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html';
-        var disqus_url = 'http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html';
+        var disqus_identifier = 'http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html';
+        var disqus_url = 'http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html';
         var disqus_script = 'embed.js';
       
     (function () {

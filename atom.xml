@@ -4,7 +4,7 @@
   <title><![CDATA[Mengz You's blogger.]]></title>
   <link href="http://youmz.cn/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-06-13T08:31:28+00:00</updated>
+  <updated>2014-07-21T15:20:21+00:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -246,7 +246,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#58;&#x74;&#101;&#115;&#116;&#64;&#116;&#101;&#x73;&#116;&#46;&#99;&#111;&#109;">&#x74;&#101;&#115;&#x74;&#x40;&#x74;&#x65;&#x73;&#116;&#x2e;&#99;&#111;&#109;</a> <br/>
+user anonymous <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#116;&#101;&#x73;&#x74;&#64;&#x74;&#x65;&#x73;&#116;&#46;&#x63;&#x6f;&#109;">&#116;&#x65;&#x73;&#116;&#x40;&#x74;&#101;&#115;&#x74;&#46;&#x63;&#111;&#x6d;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
@@ -457,7 +457,7 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x75;&#x73;&#x65;&#114;&#64;&#49;&#x39;&#x32;&#x2e;&#x31;&#54;&#56;&#x2e;&#49;&#46;&#49;&#48;&#48;">&#117;&#115;&#101;&#114;&#x40;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#x38;&#46;&#x31;&#46;&#x31;&#48;&#48;</a>   </br>
+<blockquote><p>$ ssh <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x75;&#115;&#x65;&#114;&#64;&#x31;&#x39;&#50;&#x2e;&#49;&#x36;&#56;&#x2e;&#x31;&#46;&#x31;&#48;&#48;">&#117;&#x73;&#x65;&#x72;&#64;&#x31;&#x39;&#50;&#46;&#x31;&#54;&#56;&#46;&#49;&#46;&#x31;&#48;&#x30;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -531,6 +531,48 @@ $ fusermount -u remote-home</p></blockquote>
 <p>坐了3个多小时的火车到Eemmada之后，我们刚开始还以为是换另一辆火车。结果发现我们错啦！这次是要换乘一个大巴！大概1个多小时后，又回到了KA！基本上这次旅行还算可以。就是火车票买晚了有点失败，不然还可以玩玩的！最划得来的是买了那张城市卡，如果单个算那些门票费的话，都差不错1000多啦！</p>
 
 <p><embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="600" height="400" flashvars="host=picasaweb.google.com&hl=zh_CN&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F110469673943058147906%2Falbumid%2F5656928397040853953%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCLTOqs7U99G6FA%26hl%3Dzh_CN" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[命令行修改Linux系统日期时间]]></title>
+    <link href="http://youmz.cn/blog/2011/04/07/command-line-to-change-system-time.html"/>
+    <updated>2011-04-07T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2011/04/07/command-line-to-change-system-time</id>
+    <content type="html"><![CDATA[<p>有时在一些服务器上无法进行图形界面登录，为了修改系统时间只能用命令行的方式。</p>
+
+<p>用于修改系统提起和时间的命令是<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?date"><strong>date</strong></a>，该命令既可以查看系统日期和时间，也可以进行设置。注意，在进行设置时，需要以root用户运行。</p>
+
+<p>用<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?date"><strong>date</strong></a>设置系统日期和时间可以用很多种格式，具体可查看其man手册。</p>
+
+<!-- more -->
+
+
+<p>用下面的语法进行设置日期和时间：</p>
+
+<blockquote><p><em>date –set=&ldquo;STRING&rdquo;</em></p></blockquote>
+
+<p>如设置一个新的日期和时间到 2 Oct 2011 18:00 ，就在终端输入：</p>
+
+<blockquote><p><em>date &mdash;set=&ldquo;2 OCT 2011 18:00:00&rdquo;</em></p></blockquote>
+
+<p>或者</p>
+
+<blockquote><p><em>date -s &ldquo;2 OCT 2011 18:00:00&rdquo;</em></p></blockquote>
+
+<p>还可以指定简单的格式，如</p>
+
+<blockquote><p><em>date +%Y%m%d%H%M -s &ldquo;201110021800&rdquo;</em></p></blockquote>
+
+<p>也可以单独指定日期时间，如</p>
+
+<blockquote><p><em>date +%Y%m%d -s &ldquo;20111002&rdquo;</em></p>
+
+<p><em>date +%T -s &ldquo;18:00:00&rdquo;</em></p></blockquote>
+
+<p>总之可以按照查看日期和时间的格式加上 -s 参数进行设置。</p>
+
+<p>参考：<a href="http://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/">Linux Set Date and Time From a Command Prompt</a></p>
 ]]></content>
   </entry>
   

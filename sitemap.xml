@@ -1,79 +1,114 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>
-            http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html
-        </loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2011/01/31/trans-kde-46-platform.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2011/04/07/command-line-to-change-system-time.html</loc>
-        <lastmod>2014-07-21T15:14:41+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2011/05/02/travel-goteborg.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html
-        </loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2013/01/15/use-data-card-on-opensuse.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2014/01/02/start.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/2014/05/20/abandon-digikam-4.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/about/</loc>
-        <lastmod>2014-07-21T15:14:41+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/about/resume.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/about/resume_en.html</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/blog/archives/</loc>
-        <lastmod>2014-07-21T15:14:41+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/</loc>
-        <lastmod>2014-07-21T15:14:41+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://youmz.cn/robots.txt</loc>
-        <lastmod>2014-06-13T08:32:25+00:00</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://youmz.cn/blog/2014/05/20/abandon-digikam-4.html</loc>
+    <lastmod>2014-05-20T11:12:35+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits.html</loc>
+    <lastmod>2014-03-28T14:01:56+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2014/01/02/start.html</loc>
+    <lastmod>2014-01-02T14:33:20+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html</loc>
+    <lastmod>2013-01-15T21:33:20+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2013/01/15/use-data-card-on-opensuse.html</loc>
+    <lastmod>2013-01-15T14:33:20+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html</loc>
+    <lastmod>2011-06-30T07:58:46+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2011/05/02/travel-goteborg.html</loc>
+    <lastmod>2011-05-02T06:48:11+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2011/04/07/data-command-on-linux.html</loc>
+    <lastmod>2011-04-07T17:03:32+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2011/01/31/trans-kde-46-platform.html</loc>
+    <lastmod>2011-01-31T09:16:58+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html</loc>
+    <lastmod>2011-01-30T08:57:50+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html</loc>
+    <lastmod>2011-01-29T08:31:10+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html</loc>
+    <lastmod>2009-12-04T17:48:16+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://youmz.cn/blog/archives/</loc>
+    <lastmod>2014-07-21T20:26:44+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/about/</loc>
+    <lastmod>2014-07-21T20:26:44+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/</loc>
+    <lastmod>2014-07-21T20:26:44+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/about/resume.html</loc>
+    <lastmod>2014-07-21T20:26:44+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://youmz.cn/about/resume_en.html</loc>
+    <lastmod>2014-07-21T20:26:44+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
 </urlset>

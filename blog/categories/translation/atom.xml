@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Translation | Mengz You's blogger.]]></title>
   <link href="http://youmz.cn/blog/categories/translation/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-07-21T15:20:21+00:00</updated>
+  <updated>2014-07-21T20:26:44+02:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[【翻译】简便安全地访问远程文件]]></title>
     <link href="http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
-    <updated>2011-06-30T05:58:46+00:00</updated>
+    <updated>2011-06-30T07:58:46+02:00</updated>
     <id>http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.linuxjournal.com/content/accessing-remote-files-easy-and-secure">Accessing Remote Files Easily and Securely</a></p>
 
@@ -31,7 +31,7 @@
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x75;&#x73;&#101;&#114;&#x40;&#x31;&#x39;&#x32;&#x2e;&#x31;&#54;&#56;&#x2e;&#x31;&#x2e;&#49;&#48;&#48;">&#x75;&#x73;&#101;&#x72;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#x36;&#56;&#x2e;&#49;&#x2e;&#x31;&#x30;&#48;</a>   </br>
+<blockquote><p>$ ssh <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x75;&#115;&#101;&#x72;&#64;&#49;&#57;&#x32;&#46;&#x31;&#54;&#56;&#x2e;&#49;&#46;&#49;&#48;&#48;">&#117;&#115;&#101;&#x72;&#64;&#49;&#x39;&#x32;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#49;&#x2e;&#49;&#x30;&#48;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -67,7 +67,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[【翻译】KDE 4.6 - 平台更新]]></title>
     <link href="http://youmz.cn/blog/2011/01/31/trans-kde-46-platform.html"/>
-    <updated>2011-01-31T08:16:58+00:00</updated>
+    <updated>2011-01-31T09:16:58+01:00</updated>
     <id>http://youmz.cn/blog/2011/01/31/trans-kde-46-platform</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.kde.org/announcements/4.6/platform.php">KDE Releases Development Platform 4.6.0</a></p>
 
@@ -121,7 +121,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[【翻译】KDE 4.6 - 应用更新]]></title>
     <link href="http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html"/>
-    <updated>2011-01-30T07:57:50+00:00</updated>
+    <updated>2011-01-30T08:57:50+01:00</updated>
     <id>http://youmz.cn/blog/2011/01/30/trans-kde-46-applications</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.kde.org/announcements/4.6/applications.php">KDE Releases Applications 4.6.0</a></p>
 
@@ -202,7 +202,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[【翻译】KDE 4.6 - 新工作空间（Wrokspaces）]]></title>
     <link href="http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html"/>
-    <updated>2011-01-29T07:31:10+00:00</updated>
+    <updated>2011-01-29T08:31:10+01:00</updated>
     <id>http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.kde.org/announcements/4.6/plasma.php">Plasma Workspaces Put You in Control</a></p>
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Photography | Mengz You's blogger.]]></title>
+  <title><![CDATA[Category: Photography | Mengz You's blog.]]></title>
   <link href="http://youmz.cn/blog/categories/photography/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-07-21T20:26:44+02:00</updated>
+  <updated>2014-07-23T16:42:53+00:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -16,17 +16,17 @@
   <entry>
     <title type="html"><![CDATA[放弃使用digikam 4.0版]]></title>
     <link href="http://youmz.cn/blog/2014/05/20/abandon-digikam-4.html"/>
-    <updated>2014-05-20T11:12:35+02:00</updated>
+    <updated>2014-05-20T09:12:35+00:00</updated>
     <id>http://youmz.cn/blog/2014/05/20/abandon-digikam-4</id>
     <content type="html"><![CDATA[<p>最近<a href="http://www.digikam.org/">digikam</a>发布最新的4.0版：</p>
 
 <ul>
 <li>一个新的工具专注于组织整个标签层级；</li>
-<li>一个新的维护国内工具专注于分析图像质量和自动使用Pick Lables来自动标签；</li>
+<li>一个新的维护工具专注于分析图像质量和自动使用Pick Lables来自动标签；</li>
 <li>为了后面切换所有的digikam代码到Qt5，Showfoto的缩略兰已经移植到了Qt的model/view；</li>
 <li>修复了一些导入工具的长期问题；</li>
 <li>该版本丢弃了最后的Qt3支持的类，全部移植到了Qt4的model/view；</li>
-<li>改版还包含了多CPU支持，支持一些需要大量运算的工具。</li>
+<li>该版本还包含了多CPU支持，支持一些需要大量运算的工具。</li>
 </ul>
 
 
@@ -55,7 +55,7 @@
   <entry>
     <title type="html"><![CDATA[【翻译】来自Elke Vogelsang拍摄惊艳狗狗肖像的秘密]]></title>
     <link href="http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits.html"/>
-    <updated>2014-03-28T14:01:56+01:00</updated>
+    <updated>2014-03-28T13:01:56+00:00</updated>
     <id>http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://500px.com/blog/1091/the-secrets-to-taking-awesome-dog-portraits-by-elke-vogelsang">The Secrets To Taking Awesome Dog Portraits By Elke Vogelsang</a></p>
 

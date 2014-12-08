@@ -4,7 +4,7 @@
   <title><![CDATA[Mengz You's blog.]]></title>
   <link href="http://youmz.cn/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-09-11T01:41:50+08:00</updated>
+  <updated>2014-12-08T09:32:10+00:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[放弃使用digikam 4.0版]]></title>
     <link href="http://youmz.cn/blog/2014/05/20/abandon-digikam-4.html"/>
-    <updated>2014-05-20T17:12:35+08:00</updated>
+    <updated>2014-05-20T09:12:35+00:00</updated>
     <id>http://youmz.cn/blog/2014/05/20/abandon-digikam-4</id>
     <content type="html"><![CDATA[<p>最近<a href="http://www.digikam.org/">digikam</a>发布最新的4.0版：</p>
 
@@ -55,7 +55,7 @@
   <entry>
     <title type="html"><![CDATA[【翻译】来自Elke Vogelsang拍摄惊艳狗狗肖像的秘密]]></title>
     <link href="http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits.html"/>
-    <updated>2014-03-28T21:01:56+08:00</updated>
+    <updated>2014-03-28T13:01:56+00:00</updated>
     <id>http://youmz.cn/blog/2014/03/28/trans-secrets-taking-dog-portraits</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://500px.com/blog/1091/the-secrets-to-taking-awesome-dog-portraits-by-elke-vogelsang">The Secrets To Taking Awesome Dog Portraits By Elke Vogelsang</a></p>
 
@@ -196,7 +196,7 @@
   <entry>
     <title type="html"><![CDATA[开始]]></title>
     <link href="http://youmz.cn/blog/2014/01/02/start.html"/>
-    <updated>2014-01-02T21:33:20+08:00</updated>
+    <updated>2014-01-02T13:33:20+00:00</updated>
     <id>http://youmz.cn/blog/2014/01/02/start</id>
     <content type="html"><![CDATA[<p>从现在开始，在里写Blog。 <br/>
 更新应该不会太多，但是还是希望能有所分享。</p>
@@ -207,9 +207,64 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
+    <link href="http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
+    <updated>2013-01-15T21:33:20+00:00</updated>
+    <id>http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
+
+<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
+答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h4>使用 “HERE document” 的 FTP 脚本</h4>
+
+<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
+user USERNAME PASSWORD <br/>
+binary <br/>
+cd PATH <br/>
+mget PATH <br/>
+SCRIPTEND</p></blockquote>
+
+<p>在上面的ftp脚本中： <br/>
+*   ftp : ftp命令 <br/>
+*   -i : 不用交互式提示 <br/>
+*   -n : 不用自动登录 <br/>
+*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
+*   binary : 为二进制文件传输设置模式 <br/>
+*   cd PATH : 在远程机器上改变目录 <br/>
+*   mget PATH : 获取指定文件 <br/>
+*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
+
+<h4>在Shell脚本中使用 FTP 脚本</h4>
+
+<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
+
+<blockquote><p>\$ cat download.sh <br/>
+ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
+user anonymous <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#116;&#101;&#115;&#x74;&#64;&#116;&#101;&#115;&#116;&#x2e;&#99;&#x6f;&#x6d;">&#116;&#x65;&#x73;&#116;&#64;&#x74;&#101;&#x73;&#116;&#46;&#99;&#111;&#x6d;</a> <br/>
+binary <br/>
+cd cpan/authors/id/P/PM/PMQS/ <br/>
+mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
+SCRIPTEND</p></blockquote>
+
+<p>执行这个脚本来下载文件</p>
+
+<blockquote><p>\$ sh download.sh <br/>
+\$ ls
+download.sh <br/>
+Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[在openSUSE上使用3G数据卡]]></title>
     <link href="http://youmz.cn/blog/2013/01/15/use-data-card-on-opensuse.html"/>
-    <updated>2013-01-15T21:33:20+08:00</updated>
+    <updated>2013-01-15T13:33:20+00:00</updated>
     <id>http://youmz.cn/blog/2013/01/15/use-data-card-on-opensuse</id>
     <content type="html"><![CDATA[<p>今天这篇是因为想把怎么成功连上网的过程给记录下来。真应该感谢家里的宽带坏掉了，还有手里正好有一个华为的联通3G数据上网卡，所以就折腾了一下，这都是废话了！</p>
 
@@ -385,64 +440,9 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[【翻译】如何在Unix Shell脚本中使用ftp下载文件]]></title>
-    <link href="http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell.html"/>
-    <updated>2013-01-15T21:33:20+08:00</updated>
-    <id>http://youmz.cn/blog/2013/01/15/translate-how-do-I-ftp-in-shell</id>
-    <content type="html"><![CDATA[<p>【原文】<a href="http://www.thegeekstuff.com/2010/12/how-do-i-ftp-and-download-files-from-a-unix-shell-script/">How Do I ftp and Download files from a UNIX Shell Script</a></p>
-
-<p>问题：我想在一个shell脚本内执行ftp，在脚本内部就提供用户名和密码来下载文件。你能给我解释下怎么样在shell脚本中执行这个任务吗？ <br/>
-答：为了在批量模式下用ftp下载/上传文件，你可以从命令行使用称为“<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>”的FTP脚本，或者像下面说的一样在脚本中调用FTP。</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h4>使用 “HERE document” 的 FTP 脚本</h4>
-
-<blockquote><p>\$ ftp -in URL &lt;&lt; SCRIPTEND <br/>
-user USERNAME PASSWORD <br/>
-binary <br/>
-cd PATH <br/>
-mget PATH <br/>
-SCRIPTEND</p></blockquote>
-
-<p>在上面的ftp脚本中： <br/>
-*   ftp : ftp命令 <br/>
-*   -i : 不用交互式提示 <br/>
-*   -n : 不用自动登录 <br/>
-*   user USERNAME PASSWORD : 使用提供的用户名和密码登录 <br/>
-*   binary : 为二进制文件传输设置模式 <br/>
-*   cd PATH : 在远程机器上改变目录 <br/>
-*   mget PATH : 获取指定文件 <br/>
-*   SCRIPTEND : 指定 “HERE document” 开始和结束的标记“HERE document”用来为命令提供输入，请参考<a href="http://en.wikipedia.org/wiki/Here_document">HERE document</a>。</p>
-
-<h4>在Shell脚本中使用 FTP 脚本</h4>
-
-<p>下面是一个简单的例子用来从FTP服务器下载一个tar文件</p>
-
-<blockquote><p>\$ cat download.sh <br/>
-ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#116;&#x65;&#x73;&#x74;&#x40;&#116;&#101;&#x73;&#116;&#46;&#x63;&#111;&#x6d;">&#116;&#101;&#115;&#x74;&#64;&#116;&#x65;&#115;&#116;&#x2e;&#x63;&#111;&#x6d;</a> <br/>
-binary <br/>
-cd cpan/authors/id/P/PM/PMQS/ <br/>
-mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
-SCRIPTEND</p></blockquote>
-
-<p>执行这个脚本来下载文件</p>
-
-<blockquote><p>\$ sh download.sh <br/>
-\$ ls
-download.sh <br/>
-Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[【翻译】简便安全地访问远程文件]]></title>
     <link href="http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
-    <updated>2011-06-30T13:58:46+08:00</updated>
+    <updated>2011-06-30T05:58:46+00:00</updated>
     <id>http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.linuxjournal.com/content/accessing-remote-files-easy-and-secure">Accessing Remote Files Easily and Securely</a></p>
 
@@ -457,7 +457,7 @@ Compress-Raw-Bzip2-2.027.tar.gz</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#117;&#x73;&#x65;&#114;&#x40;&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#x2e;&#x31;&#46;&#x31;&#48;&#x30;">&#x75;&#115;&#101;&#114;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#46;&#x31;&#x2e;&#x31;&#x30;&#48;</a>   </br>
+<blockquote><p>$ ssh <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x75;&#115;&#101;&#x72;&#x40;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#x2e;&#x31;&#x2e;&#x31;&#x30;&#48;">&#117;&#115;&#101;&#114;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#x38;&#46;&#x31;&#x2e;&#49;&#48;&#x30;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -493,7 +493,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[哥德堡之行]]></title>
     <link href="http://youmz.cn/blog/2011/05/02/travel-goteborg.html"/>
-    <updated>2011-05-02T12:48:11+08:00</updated>
+    <updated>2011-05-02T04:48:11+00:00</updated>
     <id>http://youmz.cn/blog/2011/05/02/travel-goteborg</id>
     <content type="html"><![CDATA[<p>昨天周六，来瑞典的最后一个周末啦！所以决定要去哥德堡玩一玩。</p>
 
@@ -535,9 +535,55 @@ $ fusermount -u remote-home</p></blockquote>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[出差瑞典]]></title>
+    <link href="http://youmz.cn/blog/2011/04/22/business-trip-to-swiden.html"/>
+    <updated>2011-04-22T04:48:11+00:00</updated>
+    <id>http://youmz.cn/blog/2011/04/22/business-trip-to-swiden</id>
+    <content type="html"><![CDATA[<p>工作快满三年了，终于有了一次出差的机会！没想到还是走出国门，目的地是瑞典的Karlskrona(KA)。</p>
+
+<p>幸好之前在深圳的时候已经办理好了护照，不然就没这次出国的机会啦！4月15号拿到了签证，同事一起的订的飞机票是北京时间17号23：30分，从上海浦东到法兰克福机场转机到哥本哈根，然后再转火车到KA。</p>
+
+<!-- more -->
+
+
+<p>17号下午19点，吃完晚饭后，就打了个的士，然后上外环直奔浦东机场。和出租车司机刚开始聊天还挺好，不过这个上海人有很大的排外思想，这让我很不爽！不到1个小时就到了浦东机场，车费花了 193 rmb 。到机场后上了个厕所后碰到了比我还早到的同事，然后就坐着等其他同事。</p>
+
+<p>差不多21点多，我们托运完行李后直接过关进入了候机厅，然后去逛了浦东机场的免税店。有同事在里面订购了很多化妆品，我什么也没买，只是看了下有些酒还挺好，打算回去的时候整两瓶回去。</p>
+
+<p>之后就等着登记，我们乘坐的是汉莎航空，好像是一架A340这个飞机比较长，我们订的座位在最后面。从中国出发的飞机就是人多，几乎没有空余的座位，而且经济舱的位置相当的狭小。飞机起飞后不久，就开是发晚餐，我选了中餐的牛肉饭，味道还可以，还喝了两杯红酒。正是由于喝了两杯红酒，导致我后面把吃的东西全吐出来啦！吃完晚餐后，就坐着看看电影。后面感觉很不舒服，一个是吃多了，酒也喝多了，还有就是位置很不舒服，导致我睡了一个觉之后难受，之后就不停地去厕所呕吐。大半夜的时候睡不着和另个同事都机舱最后面去喝茶，结果一个中国的乘务员还非要让我们坐回位置去！<br/>
+<img src="https://lh5.googleusercontent.com/-TyS6rESZF14/ToFyZbKhM6I/AAAAAAAAAk4/oVZgEWEDYSM/w945-h709-no/DSC05707.JPG" alt="法兰克福机场" /></p>
+
+<p>大概欧洲时间凌晨5：30分，终于到达了法兰克福机场，那时天还没亮。我直接下飞机过了一个德国的关检，由于飞往哥本哈根的飞机是8点多，所以我们在法兰克福机场里面逛了一下，里面也有很多商店。之后天慢慢就亮啦！8点多我们乘坐飞机飞往哥本哈根。当时德国的天气是阴天，飞机起飞后不久冲出了云层，阳光普照，感觉真是舒服，看着下面的云层就像棉花糖一样铺到天边。 <br/>
+<img src="https://lh5.googleusercontent.com/-nRnfcWLfyWU/ToFyZZOBLBI/AAAAAAAAAk4/LlnMmhj28H4/w945-h709-no/DSC05713.JPG" alt="飞离法兰克福" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/-BpKy-JwAYTI/ToFyZdrDrBI/AAAAAAAAAk4/NHr_z46np9g/w945-h709-no/DSC05718.JPG" alt="冲出云层" /></p>
+
+<p>一个多小时，飞机下降又穿过云层后直接就降落到哥本哈根机场，这个机场比较，就在海边。 <br/>
+<img src="https://lh6.googleusercontent.com/-_IzEfNJ0E28/ToFyZcDqMyI/AAAAAAAAAk4/8dbwxQp5Br0/w945-h709-no/DSC05740.JPG" alt="哥本哈根机场" /></p>
+
+<p><img src="https://lh6.googleusercontent.com/-EjNWy1q0Trw/ToFyZfQOaiI/AAAAAAAAAk4/DcKoUuB1nfQ/w945-h709-no/DSC05746.JPG" alt="哥本哈根火车" /></p>
+
+<p>下飞机取了行李之后，我们直接到机场下面的火车站坐火车前往 KA，大概12点多我们坐上了火车。这边的火车就像地铁一样，但是人很少，就三节车厢的火车多坐不满。火车开出站没多久就到了丹麦和瑞典跨海大桥，进入瑞典之后天气非常好，阳光明媚。在火车上看到这边的感觉非常好！大概坐了1个多小时，火车停在一个叫 Kristianstad 的小镇，我们需要在离这转另一辆火车才能到 KA 。这小镇的火车站下来就随便出去，对面是一个教堂，我们在周围逛了一圈，拍了几张照片。 <br/>
+<img src="https://lh3.googleusercontent.com/--8ZuwkomL6g/ToFyZUCLa4I/AAAAAAAAAk4/gZfa-BRaQIQ/w945-h709-no/DSC05758.JPG" alt="火车站" /></p>
+
+<p><img src="https://lh4.googleusercontent.com/-cOwYRdBAof4/ToFyZTMAL2I/AAAAAAAAAk4/1l-kkFQCs0c/w945-h709-no/DSC05765.JPG" alt="教堂" /></p>
+
+<p>在这个小镇等了差不多一个小时，我们上了去往KA的火车，再坐了差不多2个小时，我们终于到这次出差的目的地Karlskrona。 这也是一个镇，火车站还没之前转车那里的好。 <br/>
+<img src="https://lh5.googleusercontent.com/-qI2umgLvimU/ToFyZQ3dyhI/AAAAAAAAAk4/p2uGDJMnVng/w945-h709-no/DSC05786.JPG" alt="KA火车站" /></p>
+
+<p>我们下了火车差不多下午 3点多啦！于是我拖着行李去找我们已经订好的住的地方，我订的是一个类似租房的那种地方。房间里有简单的厨房之类的。找到了之后，发现这边的所有门，不管是外面的大门还是每个房间的门都是使用密码来开的，我们之前订好房就已经发给了我每个房间的密码，我们到了之后也没个什么人，因为是周末。</p>
+
+<p>我们直接就用密码打开各自的房间。每个人的房间的布局都不同。我都看了下，我这间算是最小。不过很精致，什么都有！ <br/>
+<img src="https://lh4.googleusercontent.com/-OYMc4CFcODs/ToFyZXo4dwI/AAAAAAAAAk4/obXD7ZreJVY/w945-h709-no/DSC05853.JPG" alt="房间" /></p>
+
+<p>整个过来的行程就是这样。由于我来的时候忘记带相机的读卡器啦，所以一直无法上传照片。幸好今天有个一个同事从上海过来，多亏他帮忙把数据卡带过来，我今天才能上传了前几天照的照片，哈哈！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[命令行修改Linux系统日期时间]]></title>
     <link href="http://youmz.cn/blog/2011/04/07/data-command-on-linux.html"/>
-    <updated>2011-04-07T23:03:32+08:00</updated>
+    <updated>2011-04-07T15:03:32+00:00</updated>
     <id>http://youmz.cn/blog/2011/04/07/data-command-on-linux</id>
     <content type="html"><![CDATA[<p>有时在一些服务器上无法进行图形界面登录，为了修改系统时间只能用命令行的方式。</p>
 
@@ -579,7 +625,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[【翻译】KDE 4.6 - 平台更新]]></title>
     <link href="http://youmz.cn/blog/2011/01/31/trans-kde-46-platform.html"/>
-    <updated>2011-01-31T16:16:58+08:00</updated>
+    <updated>2011-01-31T08:16:58+00:00</updated>
     <id>http://youmz.cn/blog/2011/01/31/trans-kde-46-platform</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.kde.org/announcements/4.6/platform.php">KDE Releases Development Platform 4.6.0</a></p>
 
@@ -633,7 +679,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[【翻译】KDE 4.6 - 应用更新]]></title>
     <link href="http://youmz.cn/blog/2011/01/30/trans-kde-46-applications.html"/>
-    <updated>2011-01-30T15:57:50+08:00</updated>
+    <updated>2011-01-30T07:57:50+00:00</updated>
     <id>http://youmz.cn/blog/2011/01/30/trans-kde-46-applications</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.kde.org/announcements/4.6/applications.php">KDE Releases Applications 4.6.0</a></p>
 
@@ -714,7 +760,7 @@ $ fusermount -u remote-home</p></blockquote>
   <entry>
     <title type="html"><![CDATA[【翻译】KDE 4.6 - 新工作空间（Wrokspaces）]]></title>
     <link href="http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces.html"/>
-    <updated>2011-01-29T15:31:10+08:00</updated>
+    <updated>2011-01-29T07:31:10+00:00</updated>
     <id>http://youmz.cn/blog/2011/01/29/trans-kde-46-workspaces</id>
     <content type="html"><![CDATA[<p>【原文】<a href="http://www.kde.org/announcements/4.6/plasma.php">Plasma Workspaces Put You in Control</a></p>
 
@@ -776,9 +822,9 @@ $ fusermount -u remote-home</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[Google Earth在Linux下字体显示问题]]></title>
-    <link href="http://youmz.cn/blog/2009/12/05/google-earth-fonts-display-problem-on-linux.html"/>
-    <updated>2009-12-05T00:48:16+08:00</updated>
-    <id>http://youmz.cn/blog/2009/12/05/google-earth-fonts-display-problem-on-linux</id>
+    <link href="http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html"/>
+    <updated>2009-12-04T16:48:16+00:00</updated>
+    <id>http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux</id>
     <content type="html"><![CDATA[<p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
 
 <p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>

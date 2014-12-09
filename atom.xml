@@ -4,7 +4,7 @@
   <title><![CDATA[Mengz You's blog.]]></title>
   <link href="http://youmz.cn/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-12-08T09:32:10+00:00</updated>
+  <updated>2014-12-09T14:16:29+00:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -246,7 +246,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#116;&#101;&#115;&#x74;&#64;&#116;&#101;&#115;&#116;&#x2e;&#99;&#x6f;&#x6d;">&#116;&#x65;&#x73;&#116;&#64;&#x74;&#101;&#x73;&#116;&#46;&#99;&#111;&#x6d;</a> <br/>
+user anonymous <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x74;&#x65;&#x73;&#116;&#64;&#x74;&#x65;&#115;&#116;&#46;&#x63;&#x6f;&#x6d;">&#116;&#x65;&#x73;&#x74;&#x40;&#116;&#x65;&#115;&#116;&#x2e;&#99;&#111;&#109;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
@@ -440,6 +440,36 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[【翻译】时间管理]]></title>
+    <link href="http://youmz.cn/blog/2011/06/30/trans-time-management.html"/>
+    <updated>2011-06-30T05:58:46+00:00</updated>
+    <id>http://youmz.cn/blog/2011/06/30/trans-time-management</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.yorku.ca/cdc/lsp/tmonline/tm1.htm">Time Management</a></p>
+
+<p>如果你想走向成功，你就应该有效地管理你的时间。所有的东西都可以有静止的时候，唯独时间是不会停下来的，更好的时间管理技能能够提高你的等级，帮助你在压力下前进，也可以帮助你在你的大学学习（Gortner, Lahmers, and Zulaut, 2000; Macan et. al., 1990; ISR, 1995）。</p>
+
+<p>阶段一直竞争前进。这篇文档的目的就是给你一些怎么管理时间来提高你的理论及个人的能力的建议。这将引用理论上的自我调节研究和关于时间管理策略的讨论来帮助你调整你对时间的认识，提高你怎么利用时间的意识，以此使你变现得最佳。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h3>时间管理周期###</h3>
+
+<p>由于来自于完美主义和不现实的期望，时间管理“系统”经常失败。例如，一些人直到他们在他们的工作落后时才开始时间管理的方法，他们采用时间管理作为一种追赶的手段。他们最初的计划试图在没有适于时间要求的情况下填满他们不得不做的事情。这种自“追赶时间管理”出现的不现实的计划也没有多于一种为改变的更新动机的表示的价值，而没有支持它的的结构。</p>
+
+<p>设法按照紧密的时间表经常认真地在他们有意的步调和完全地放弃计划之后，导致继续的时间麻烦。对他们来说，不知道为什么，产生了不工作的计划策略的结果。但是，重要的不是完美的，它一直在形成和使用一个帮助你达成你的目标的计划。对于时间管理系统，你的最好的一个选项是在学年的初期开始使用一个循环的系统。通常，系统开始于为管理时间建立一个场景的目标设置过程。</p>
+
+<p>下一个系统阶段包括跟踪时间和确定你将在哪花费你的时间。周期的第三个阶段是制定计划，它应该包括制定事件列表，一周计划，一月计划和更长时间范围的计划。第四阶段是监控你自己的行动，自我监控包括注意在你的计划下进行得有多好，你的计划有多准确，对于变换的事情你预见的怎么样等等。</p>
+
+<p>自我监控的注意是来自于一个重要研究，这个研究是关于学生理论上的自我调节，它强调在学生的成就上适应的重要性（见Zimmerman, 1998; Butler, 1998, and Boekarts,1995）。</p>
+
+<p>周期的最后阶段是时间位移和调节（比如，改变在哪花费时间来更有意地利用时间），这样目标设置可以在开始下一轮周期之前修正你的系统。实施这些阶段允许你逐渐地初始化你的程序，基于时间矫正管理技巧。每个人都想“迅速准备”，但是，事实上，变化的复杂性包括控制你的时间管理程序将产生一些时间的丢失。不要怂恿消除不允许立即产生结果的策略。不管你喜欢还是吧喜欢，都要从容地去改变。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[【翻译】简便安全地访问远程文件]]></title>
     <link href="http://youmz.cn/blog/2011/06/30/trans-accessing-remote-files-easily-and-securely.html"/>
     <updated>2011-06-30T05:58:46+00:00</updated>
@@ -457,7 +487,7 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x75;&#115;&#101;&#x72;&#x40;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#x2e;&#x31;&#x2e;&#x31;&#x30;&#48;">&#117;&#115;&#101;&#114;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#x38;&#46;&#x31;&#x2e;&#49;&#48;&#x30;</a>   </br>
+<blockquote><p>$ ssh <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#117;&#x73;&#x65;&#x72;&#64;&#x31;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#46;&#49;&#46;&#49;&#48;&#x30;">&#117;&#x73;&#101;&#114;&#64;&#x31;&#x39;&#x32;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x2e;&#49;&#48;&#x30;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -582,9 +612,9 @@ $ fusermount -u remote-home</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[命令行修改Linux系统日期时间]]></title>
-    <link href="http://youmz.cn/blog/2011/04/07/data-command-on-linux.html"/>
+    <link href="http://youmz.cn/blog/2011/04/07/date-command-on-linux.html"/>
     <updated>2011-04-07T15:03:32+00:00</updated>
-    <id>http://youmz.cn/blog/2011/04/07/data-command-on-linux</id>
+    <id>http://youmz.cn/blog/2011/04/07/date-command-on-linux</id>
     <content type="html"><![CDATA[<p>有时在一些服务器上无法进行图形界面登录，为了修改系统时间只能用命令行的方式。</p>
 
 <p>用于修改系统提起和时间的命令是<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?date"><strong>date</strong></a>，该命令既可以查看系统日期和时间，也可以进行设置。注意，在进行设置时，需要以root用户运行。</p>
@@ -619,6 +649,84 @@ $ fusermount -u remote-home</p></blockquote>
 <p>总之可以按照查看日期和时间的格式加上 -s 参数进行设置。</p>
 
 <p>参考：<a href="http://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/">Linux Set Date and Time From a Command Prompt</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[调试shell脚本的unexpected EOF While Looking for Matching "错误]]></title>
+    <link href="http://youmz.cn/blog/2011/02/13/debug-shell-unexpected-error.html"/>
+    <updated>2011-02-13T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2011/02/13/debug-shell-unexpected-error</id>
+    <content type="html"><![CDATA[<p>今天在写一个 shell 脚本的时候遇到了如下的错误：</p>
+
+<blockquote><p>line 225: unexpected EOF while looking for matching `”‘ <br/>
+line 233: syntax error: unexpected end of file</p></blockquote>
+
+<p>可是认真查看它提示出错的行时，却发现(&ldquo;)号是配对的。</p>
+
+<!-- more -->
+
+
+<p>225行是如下的代码:</p>
+
+<blockquote><p>if [ ${options} = &ldquo;ALL&rdquo; ]; then</p></blockquote>
+
+<p>很明显报错的行数不对，由于前面的代码比较多，一行行看也不容易看错错误。 <br/>
+既然说文件结尾有问题，于是我在文件尾加上一个(&ldquo;)符号，再运行。现在提示给出了正确的错误行号。</p>
+
+<p>原来是前面有这样的代码:</p>
+
+<blockquote><p>echo &ldquo;${PACKAGENAME&rdquo; >> ${file}</p></blockquote>
+
+<p>是变量的引用时少了相应的 } 号。</p>
+
+<p>所以，如果以后遇到类似的问题，可以尝试加一些符号来调试，也许会有帮助。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[openSUSE 11.3上每天的cron任务时间]]></title>
+    <link href="http://youmz.cn/blog/2011/02/02/everyday-cron-task-time-on-opensuse113.html"/>
+    <updated>2011-02-02T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2011/02/02/everyday-cron-task-time-on-opensuse113</id>
+    <content type="html"><![CDATA[<p>前段时间，发现每次开机后一段时间机器就会很慢，似乎在跑些什么任务，于是查看系统任务，发现有<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?updatedb+1"><em>updatadb</em></a>（为<a href="http://www.manpagez.com/man/1/locate/"><em>locate</em></a>构建数据索引）在运行。这些任务是由 cron 触发的。</p>
+
+<!-- more -->
+
+
+<p>于是我用<a href="http://www.manpagez.com/man/1/crontab/"><em>crontab</em></a>命令来查看当前的cron任务列表，可是得到如下返回：</p>
+
+<blockquote><p>$sudo crontab -u root -l  <br/>
+root’s password: <br/>
+no crontab for root</p></blockquote>
+
+<p>可是我发现在<em>/etc/cron.daily/</em>目录下有一些脚本， 其中就有一个<em>suse-updatedb</em>。那些进程就是由这个脚本启动的。 <br/>
+接下来，我查看了一下<em>/etc/crontab</em>文件:</p>
+
+<blockquote><p>&ndash;*/15 * * * *   root  test -x /usr/lib/cron/run-crons &amp;&amp; /usr/lib/cron/run-crons >/dev/null 2>&amp;1</p></blockquote>
+
+<p>这说明系统会每15分钟调用一次<em>/usr/lib/cron/run-crons</em>脚本，接着查看了一下那个脚本，其中发现了一行注释：</p>
+
+<blockquote><p># if DAILY_TIME set, run only at a fixed time of day</p></blockquote>
+
+<p>而<strong>DAILY_TIME</strong>这个变量应该在<em>/etc/sysconfig/cron</em>配置文件里指定，在文件中有这么一段：</p>
+
+<blockquote><p>## Type:         string <br/>
+## Default:      “” <br/>
+# <br/>
+# At which time cron.daily should start. Default is 15 minutes after booting <br/>
+# the system. Example setting would be “14:00″. <br/>
+# Due to the fact that cron script runs only every 15 minutes, <br/>
+# it will only run on xx:00, xx:15, xx:30, xx:45, not at the accurate time <br/>
+# you set. <br/>
+DAILY_TIME=&ldquo;&rdquo;</p></blockquote>
+
+<p>也就是说如果没有指定<strong>DAILY_TIME</strong>，则<em>cron.daily</em>将在系统启动后的15分钟触发，并且如果要指定特定时间，也只能指定在每小时的00/15/30/45分钟。</p>
+
+<p>于是我把这个时间设定为01:45，这样就在每天的凌晨1点45分的时候才会触发那些cron任务。</p>
+
+<p>不过我看了下<em>/usr/lib/cron/run-crons</em>，还是没有完全弄明白这个cron框架是如何去按照指定时间触发的。 <br/>
+好像<a href="http://www.opensuse.org/">openSUSE</a> 11.4将使用新的<em>cronie 1.4.4</em>替代现在的<em>vixie-cron 4.1</em>，看看这里<a href="http://en.opensuse.org/SDB:Cron">SDB:Cron</a>。</p>
 ]]></content>
   </entry>
   
@@ -821,29 +929,340 @@ $ fusermount -u remote-home</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Google Earth在Linux下字体显示问题]]></title>
-    <link href="http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux.html"/>
-    <updated>2009-12-04T16:48:16+00:00</updated>
-    <id>http://youmz.cn/blog/2009/12/04/google-earth-fonts-display-problem-on-linux</id>
-    <content type="html"><![CDATA[<p>最近在我的openSUSE 11.2上安装了Google Earth，安装非常简单，就是给下载下来的bin安装文件添加可执行属性，然后直接执行安装。</p>
+    <title type="html"><![CDATA[2010年回顾]]></title>
+    <link href="http://youmz.cn/blog/2011/01/02/review-of-2010.html"/>
+    <updated>2011-01-02T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2011/01/02/review-of-2010</id>
+    <content type="html"><![CDATA[<p>我发现我确实是很懒，一直想把2010年的一些回顾写出来，可是却一直没有行动。当然也许还有另一个原因，就是我的语言功底是比较差的，在心里想出来的东西似乎不知道怎么写出来，或者是觉得根本没什么东西可写的，几句话就可以说完。确实是这样，虽然过了365天，生活也就是这样平淡乏味。只能说明一些比较明显的变化吧。</p>
 
-<p>可是当安装完成后打开，中文字体完全显示不出来，界面上仅有一些英文。</p>
+<p>可以说2010年是我从24岁进入25岁的一年。</p>
 
 <!-- more -->
 
 
-<p><img src="http://youmz.cn/images/posts/GoogleEarth_Fonts_Bad.png" alt="GoogleEarth_Fonts_Bad" /></p>
+<p>首先说说工作吧。从2008年7月份大学毕业，我就开始在深圳的一家私企工作，做的是通信终端（也就是手机）方面的软件开发工作，刚毕业的时候还对工作充满了兴趣，可是随着时间的流逝和对工作的了解，越来越觉得对这份工作失去了兴趣。当然还有对待遇上的不满足，于是在2010年3月份，我决定辞掉我人生的第一份工作。在3月份，我也开始了寻找下个雇主的行动，其中参加了两家公司的面试，第一个自己表现太差，直接出局。第二家表现还可以，所以就拿到了offer，但是薪资给得不是很理想（虽然比之前略有增加）。可是感觉自己也没什么特别突出的地方，所以也就暂且拿了这个offer。由于我这个人有时候比较懒，就没有继续去找其他公司。</p>
 
-<p>遇上在网上搜索相关问题，终于找到了原因和解决方法：</p>
+<p>从上一家公司离职之后，在去下家公司报道之前有了那么一点自由的时间。于是花了几天的时间到厦门小小的旅游了一下，在厦门旅游的时候，得到一个到上海工作的机会，于是直接从厦门去上海面试。面试的是一家很业界有名的通信行业（当然是有那么一点点关系的关系，才有机会到这里面试）。面试过程还算正常，可是这家公司现在招收正式员工的要求是蛮高的，我肯定是达不到，所以只能以外包的方式到这里工作。于是这边就让和一家专门从事人力资源外包的公司联系，作为那家公司的员工。当然上海这边给的薪资比深圳那边好，但是由于刚来上海不了解上海的行情，再加上这种外包的方式，所以谈薪资的时候保守了一点，后来我才发现，我拿的比和我差不多的人少了很多。不过我最后还是选择了来上海。</p>
 
-<p>原来是由于Google Earth自带的Qt库的问题，所以解决方法就是删除掉安装目录里的Qt库，让程序使用系统安装的Qt库，当然前提是系统安装了Qt库。因此简单的执行如下命令：</p>
+<p>2010年4月份我从深圳搬到了上海，以外包的方式到一家公司工作，这家公司是一个大公司，工作环境相当的不错（至少比起我之前工作的环境）。不过来到一个新的环境，做与之前完全不一样方面的工作，一开始也就跟着老员工慢慢学习。我进的一个部门做的产品已经算是比较成熟的了，而且这个系统也还算庞大的（至少我是这么觉得的），说句实话，干了8个月之后，我对这个产品，还是很模糊。刚开始也就做一些维护方面的工作，当然工作一段时间之后也学到一些些东西。不过到现在我开始发现我对这份工作也不是很有兴趣，也许和做的东西有关系吧！</p>
 
-<blockquote><p>$ cd ~/google-earth  </br>
-$ rm libQt*</p></blockquote>
+<p>在工作一段时间后，我其实有时候很想离开，回深圳。这个也许有很多原因，感觉在上海这个城市的生活完全没有在深圳的生活有趣。在深圳的时候有一些很好的朋友，平时都一起玩。可是来到上海这个城市，虽然慢慢得认识了一些新朋友，可是感觉很不一样，感觉上海这边的人都很独立，一心赚钱。不过这也正常，想在上海这个城市生活，也就是钱的问题。</p>
 
-<p>然后再启动google earth，OK，显示正常！！</p>
+<p>生活方面，在深圳的时候和朋友一起租房住，很是自由，虽然工资低点，但是感觉生活很悠闲。来到上海之后，由于这边租房费比深圳高很多，所以暂时和老哥住在一起，可是由于性格方面的差异，和他们住在一起感觉是失去了一些自由自在的生活，但是由于某些原因，也只能暂时这样生活。最关键是觉得在上海的生活很孤独，缺少能一起玩的朋友。所以之前也提到想离开这个城市，上海这个冬冷夏热，物价超高的地方，不过说实话上海也有吸引人的地方，繁华的都市，想着只要能挣点钱，也许就能生活得很丰富。在上个月我和公司谈了下薪资待遇，如果给加点钱的话，就再暂时在这边呆一段时间。经理给我说了应该没问题，但是还没有确定。如果确定的话，那我想我要继续在上海过我的2011年，可是不知道生活是否会有所改变。</p>
 
-<p><img src="http://youmz.cn/images/posts/GoogleEarth_Fonts_Good.png" alt="GoogleEarth_Fonts_Good" /></p>
+<p>基本上2010年能说出来的东西也就这些了吧！生活依旧这样继续。毕业马上两年，可是还是没找到自己到底想干什么。继续寻找吧！ 希望能在2011年能得到一些突破。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在Linux上配置GappPrxoy]]></title>
+    <link href="http://youmz.cn/blog/2010/11/27/setting-gappproxy-on-linux.html"/>
+    <updated>2010-11-27T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2010/11/27/setting-gappproxy-on-linux</id>
+    <content type="html"><![CDATA[<p>首先感谢<a href="http://code.google.com/p/gappproxy/">GappProxy</a>项目的作者给我们带来了这么好的一个东西。</p>
+
+<p>之前一直使用<a href="http://www.torproject.org/projects/vidalia.html.en">Vidalia</a>＋<a href="http://www.torproject.org/">Tor</a>来进行自由的网络访问。虽然速度一般，但是只要能连接上，基本所有网站都是能访问的。但是从昨天开始，不知道为什么使用Vidalia一直连接不上，很是郁闷。</p>
+
+<!-- more -->
+
+
+<p>然后就开始尝试配置一个GappProxy来进行自由网络访问。首先从GappProxy下载<a href="http://gappproxy.googlecode.com/files/fetchserver-2.0.0.zip">服务器</a>和<a href="http://gappproxy.googlecode.com/files/localproxy-2.0.0.tar.gz">客户端</a>的源代码，或者通过<a href="http://subversion.tigris.org/">SVN</a>来下载所有的源代码：</p>
+
+<blockquote><p>svn checkout <a href="http://gappproxy.googlecode.com/svn/trunk/">http://gappproxy.googlecode.com/svn/trunk/</a> gappproxy-read-only</p></blockquote>
+
+<p>由于GappProxy的服务端是使用<a href="http://code.google.com/appengine/">Google AppEngine</a>来运行的，所以需要一个Google AppEngine帐号，然后登陆<a href="http://appengine.google.com/">http://appengine.google.com/</a>创建一个应用，比如名为<strong>xxxx</strong>，当然为了上传服务端应用的代码，还需要下载Google AppEngine的<a href="http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python">Python SDK</a>。</p>
+
+<p>对于<em>fetchserver</em>目录中的<em>server</em>端代码我们只需要修改文件<em>app.yaml</em>和<em>index.yaml</em>文件，将<em>app.yaml</em>文件的<em>application:</em>行加上创建的应用名，如<em>application: xxxx</em>。而<em>index.yaml</em>文件只需要保留第一行，将其余行删除，不然在上传的时候会报错。</p>
+
+<p>接下来就是使用Python SDK的<strong>appcfg.py</strong>工具来上传代码了，运行如下命令：</p>
+
+<blockquote><p>appcfg.py update fetchserver/</p></blockquote>
+
+<p>会提示输入GoogleAppEngine的帐号和密码，上传成功后，服务器端就会自动运行。 <br/>
+接下来需要启动clinet脚本，进入到<em>localproxy</em>目录，修改文件<em>proxy.conf</em>，将<em>fetch_server</em>字段改为*fetch_server ＝ <a href="http://xxxx.appspot.com/fetch.py*%EF%BC%8C%E7%84%B6%E5%90%8E%E8%BF%90%E8%A1%8C%EF%BC%9A">http://xxxx.appspot.com/fetch.py*%EF%BC%8C%E7%84%B6%E5%90%8E%E8%BF%90%E8%A1%8C%EF%BC%9A</a></p>
+
+<blockquote><p>proxy.py &amp;</p></blockquote>
+
+<p>然后，配置浏览器代理为<strong>127.0.0.1</strong>端口<strong>8000</strong>之后，你就可以自由访问网络啦！速度还想相当不错的！
+最后再次感谢GappProxy项目的作者们，谢谢！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【翻译】我有什么样的硬件]]></title>
+    <link href="http://youmz.cn/blog/2010/11/19/what-hardware-do-i-have.html"/>
+    <updated>2010-11-19T21:33:20+00:00</updated>
+    <id>http://youmz.cn/blog/2010/11/19/what-hardware-do-i-have</id>
+    <content type="html"><![CDATA[<p>【原文】<a href="http://www.linuxjournal.com/content/what-hardware-do-i-have">What Hardware Do I Have?</a></p>
+
+<p>通常，你也许不需要知道你使用了什么样的硬件 — 你也许拥有的是一台来自比较小一点公司的组装机或者一台二手机。本月，我将介绍你可以用来查看你安装的硬件的工具。 第一步，使用<a href="http://linux.die.net/man/1/lshw"><em>lshw</em></a> — 列举硬件工具。如果你使用普通用户执行，它会警告你需要使用<strong>root</strong>执行。因此，以<em>sudo lshw</em>执行。你将可以看到屏幕上显示你系统的信息。第一段将是常规信息，看起来就像下面这样：</p>
+
+<!-- more -->
+
+
+<blockquote><p>jbernard-eeepc             <br/>
+  description: Notebook  <br/>
+  product: 700 <br/>
+  vendor: ASUSTeK Computer INC. <br/>
+  version: 0129 <br/>
+  serial: EeePC-1234567890 <br/>
+  width: 32 bits <br/>
+  capabilities: smbios-2.5 dmi-2.5 smp-1.4 smp <br/>
+  configuration: boot=normal chassis=notebook  <br/>
+  cpus=1 uuid=XXXXXX-XXXXX-XXXXX-XXXXX</p></blockquote>
+
+<p>这是我在我的ASUS EeePC执行的结果。你可以看到生产商是ASUSTeK, BIOS的版本是0129， 以及这是一台32位的单一CPU机器。更多的信息以下面的分类来说明：</p>
+
+<blockquote><p>core<br/>
+  firmware &ndash; motherboard and BIOS information<br/>
+  cpu &ndash; CPU information</p>
+
+<pre><code>cache - cache information    
+</code></pre>
+
+<p>  memory &ndash; memory information</p>
+
+<pre><code>bank - specific bank memory information   
+</code></pre>
+
+<p>  pci &ndash; PCI bus information</p>
+
+<pre><code>display - PCI display adapter   
+multimedia - PCI audio adapter   
+pci - other PCI devices   
+network - PCI network adapter   
+</code></pre>
+
+<p>  usb &ndash; USB devices <br/>
+  ide &ndash; IDE information</p>
+
+<pre><code>disk - individual disks   
+   volume - volumes on this disk   
+</code></pre></blockquote>
+
+<p>对于多少信息可用的想法，以下内存段显示了我的EeePC的内存信息：</p>
+
+<blockquote><p>*-memory</p>
+
+<pre><code>description: System Memory   
+physical id: 1f   
+slot: System board or motherboard   
+size: 512MiB   
+</code></pre>
+
+<p>  *-bank</p>
+
+<pre><code>   description: DIMM DDR2 Synchronous 400 MHz (2.5 ns)   
+   product: PartNum0   
+   vendor: Manufacturer0   
+   physical id: 0   
+   serial: SerNum0   
+   slot: DIMM0   
+   size: 512MiB   
+   width: 64 bits   
+   clock: 400MHz (2.5ns)   
+</code></pre></blockquote>
+
+<p>这是一个基本的集中成一个命令的工具，执行一次，它可以得到系统的所有信息。但是，如果你只想知道指定子系统的信息，怎么办呢？其实是有一整套的工具的，当你需要一些指定的信息或者想在一个脚本做一些系统查询时，这些工具将更有用。 <br/>
+你也许只想看看CPU，<a href="http://www.unix.com/man-page/Linux/1/lscpu/"><em>lscpu</em></a>工具提供了类似如下的输出：</p>
+
+<blockquote><p>Architecture:          i686 <br/>
+CPU op-mode(s):        32-bit <br/>
+CPU(s):                1 <br/>
+Thread(s) per core:    1 <br/>
+Core(s) per socket:    1 <br/>
+CPU socket(s):         1 <br/>
+Vendor ID:             GenuineIntel <br/>
+CPU family:            6 <br/>
+Model:                 13 <br/>
+Stepping:              8 <br/>
+CPU MHz:               571.427</p></blockquote>
+
+<p>你可以从中看出生产厂家，是否是32位还是64位的，准确的版本和型号，以及当前CPU频率。 如果你想知道你的显卡是否被X11支持，或者你是否需要第三方驱动，你可以使用<a href="http://linux.die.net/man/8/lspci"><em>lspci</em></a>。该工具给出了所有插在你的PCI总线的设备的信息。输出类似下面：</p>
+
+<blockquote><p>00:02.0 VGA compatible controller: Intel Corporation  <br/>
+ Mobile 915GM/GMS/910GML Express Graphics Controller (rev 04) <br/>
+00:02.1 Display controller: Intel Corporation  <br/>
+ Mobile 915GM/GMS/910GML Express Graphics Controller (rev 04)</p></blockquote>
+
+<p>这个信息显示了在我的EeePC上的显卡控制器是一个Intel控制器。因此，如果你想，你现在就可以到Google搜索关于你的显卡的信息以及怎样最大限度的配置它。如果你想看看你系统上的USB设备，那么可以使用<a href="http://linux.die.net/man/8/lsusb"><em>lsusb</em></a>。在我的EeePC上，拥有一个SD卡，显示如下：</p>
+
+<blockquote><p>Bus 001 Device 002: ID 0951:1606 Kingston Technology</p></blockquote>
+
+<p>如果你对硬盘子系统感兴趣，你可以使用<a href="http://linux.die.net/man/8/blkid"><em>blkid</em></a>工具来查看。该工具打印出所有可用的文件系统，类似如下的输出：</p>
+
+<blockquote><p>/dev/sda1: UUID=&ldquo;XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX&rdquo; TYPE=&ldquo;ext2&rdquo;  <br/>
+/dev/sda2: UUID=&ldquo;XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX&rdquo; TYPE=&ldquo;swap&rdquo;  <br/>
+/dev/sda3: UUID=&ldquo;XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX&rdquo; TYPE=&ldquo;ext2&rdquo;  <br/>
+/dev/sdb1: UUID=&ldquo;XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX&rdquo; TYPE=&ldquo;ext2&rdquo;</p></blockquote>
+
+<p>用这个工具，你可以了解到什么设备可用以及什么文件系统正用在它们上面。如果你想在<em>/etc/fstab</em>里的条目使用UUID，那相关联的UUID是可用的。</p>
+
+<p>现在你知道你的系统使用了什么样的硬件，最后需要检查的是看看是否你的内核实际上正在使用可用硬件。在大部分现在的发行版本中，内核是被编译来使用模块的。你可以使用<a href="http://linux.die.net/man/8/lsmod"><em>lsmod</em></a>命令来查看哪个模块被加载了。你将得到像下面的一个别表：</p>
+
+<blockquote><p>agpgart                31788  2 drm,intel_agp <br/>
+lp                      7028  0  <br/>
+video                  17375  1 i915 <br/>
+output                  1871  1 video</p></blockquote>
+
+<p>你可以看到agpgart模块拥有31788字节的大小，以及被drm和intel_agp模块使用。</p>
+
+<p>现在，希望你可以配置和优化你的硬件，使你最大的使用它们。如果你发现有其他的工具这里没有提到，我很愿意得知它们。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[改良cocktail排序算法实现]]></title>
+    <link href="http://youmz.cn/blog/2010/10/27/improve-implement-cocktail-order-algorithm.html"/>
+    <updated>2010-10-27T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2010/10/27/improve-implement-cocktail-order-algorithm</id>
+    <content type="html"><![CDATA[<p>记得以前学习数据结构和算法时就了解了冒泡排序算法， 前几天的一个面试也被问到了这个问题。于是回来后就又温习了一遍，还了解到了一种冒泡的改良算法，叫做鸡尾酒(cocktail)排序算法，其实现是通过连个循环分别从两端进行冒泡，如下所示：</p>
+
+<!-- more -->
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">T</span> <span class="o">&gt;</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">cocktail_sort</span><span class="p">(</span><span class="n">T</span> <span class="n">array</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">bottom</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="n">n</span> <span class="err">–</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">bool</span> <span class="n">swapped</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">while</span> <span class="p">(</span><span class="n">swapped</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">swapped</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">bottom</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">top</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]);</span>
+</span><span class='line'>                <span class="n">swapped</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="n">top</span><span class="err">–</span><span class="p">;</span> <span class="c1">// top is a larger one   </span>
+</span><span class='line'>        <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">top</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">bottom</span><span class="p">;</span> <span class="n">i</span><span class="err">–</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]);</span>
+</span><span class='line'>                <span class="n">swapped</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="n">bottom</span><span class="o">++</span><span class="p">;</span> <span class="c1">// bottom is a smaller one   </span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span> <span class="c1">// end, cocktail_sort   </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>我在网上搜索的实现基本上都是上面的实现方法。 我就想为什么不在一个循环中两端一起进行冒泡呢？于是我实现了下面这样的改良的cocktail算法实现，暂且取名为<em>bi_bubble_sort</em>，减少了循环比较的次数：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">T</span> <span class="o">&gt;</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">bi_bubble_sort</span><span class="p">(</span><span class="n">T</span> <span class="o">*</span><span class="n">array</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">bottom</span> <span class="o">=</span> <span class="n">n</span> <span class="err">–</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">bool</span> <span class="n">swapped</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">while</span> <span class="p">(</span><span class="n">swapped</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">swapped</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">top</span><span class="p">;</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">bottom</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">top</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">bottom</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">bottom</span> <span class="o">||</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="n">top</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">j</span><span class="err">–</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]);</span>
+</span><span class='line'>                <span class="n">swapped</span> <span class="o">|=</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]);</span>
+</span><span class='line'>                <span class="n">swapped</span> <span class="o">|=</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="n">top</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">bottom</span><span class="err">–</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span> <span class="c1">// end, bi_bubble_sort</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>不过冒泡排序在排序算法中是效率比较差的算法了，实际中应该很少应用，呵呵！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[杭州游]]></title>
+    <link href="http://youmz.cn/blog/2010/10/10/travel-to-hangzhou.html"/>
+    <updated>2010-10-10T15:03:32+00:00</updated>
+    <id>http://youmz.cn/blog/2010/10/10/travel-to-hangzhou</id>
+    <content type="html"><![CDATA[<p>7号下午，上海南站，一张火车票直奔杭州。到杭州天都已经黑啦！随便坐了一路公交车，看见还算繁华的地方下车后，得知是体育场路，之后走了一段到中山北路，随便找了一个宾馆住下。</p>
+
+<p>第二天，大概睡到9点起来，上会网，看了看西湖的路线！Ok，出发，直接抵达北山路西湖边上准备步行环游西湖。先慢慢沿着西湖边往断桥方向走，一边走一边拿着相机拍照。一路上似乎都有桂花，香气扑鼻。</p>
+
+<!-- more -->
+
+
+<p>天气很好，中午的阳光明媚而不强烈，照在身上很舒服。游人不算很多，估计是因为十一黄金周已经结束。过了断桥又了很长一段，到了苏堤（难道是苏东坡修建的？）北端。沿着苏堤往南走，苏堤一边是西湖，一边是西里湖。风景还真是不错，一路上也还有规划香，真是“幽幽西湖水，纵闻两岸香”啊！苏提的两个岸边隔一段都有休息的长凳，走累了，就在边上坐了一会，时时一阵秋风吹过，真是惬意啊！ <br/>
+<img src="https://lh3.googleusercontent.com/-u_CldSN_I5c/ToFyY3clXJI/AAAAAAAAAkk/Jytt4kXvK7g/w945-h709-no/DSC05448.JPG" alt="桂花" /></p>
+
+<p>之后又走了好长一段，来到了钓鱼区，岸边全是一群老头摆满了鱼竿。 <br/>
+<img src="https://lh5.googleusercontent.com/-Yo4oXBa4D0g/ToFyYwhLMDI/AAAAAAAAAkk/548uk9ntEhk/w945-h709-no/DSC05462.JPG" alt="钓鱼" /></p>
+
+<p>我走近一看，他们还真钓到不少的鱼。一直连续好长一段，全是钓鱼的，搞得我都不能沿着岸边走，只能沿着苏堤中间的道路走。一直一直走，直到苏堤的南端，之后有顺着西湖边走到雷峰塔所在的山脚下。由于进雷峰塔景区需要门票，所以也就没进去，就在山脚下晃了一下。之后又沿着西湖边往北走，最后不知道走到了哪，就到路边搭个车回去休息啦！</p>
+
+<p>呆到天黑，吃过晚饭我又搭车去雷锋塔景区附近，想看看西湖夜景，结果除雷峰塔有点灯光，其它地方一片漆黑。 <br/>
+<img src="https://lh6.googleusercontent.com/-P0yNGIJtroE/ToFyYzBk5kI/AAAAAAAAAkk/h83UjYChK2Q/w945-h709-no/DSC05485.JPG" alt="雷峰塔" /></p>
+
+<p>也就随便照了几张雷峰塔夜景，然后散散步。 <br/>
+之后回酒店休息，第三天起床后去了南宋御街。这是一条步行街，两侧的建筑都是仿古风格，这里也是南宋时的一条古街，还有一处留有古迹，那就是街道有一个坑，估计那个坑就是当时真的街道。 <br/>
+<img src="https://lh6.googleusercontent.com/-J90Tl6irnss/ToFyY8qcT2I/AAAAAAAAAkk/3KdGHsgvj6Y/w945-h709-no/DSC05497.JPG" alt="老街" /></p>
+
+<p>现在的街道已经填高了很多啦！御街有个麦当劳店，风格和其他地方的店真不一样。其实御街就类似其他城市的什么古镇街道一样，有很多民间的小玩意的商店和很多美食。</p>
+
+<p>逛完御街，腿也酸了，想想没什么好玩的啦，就直接搭车去了火车站，买了张票，结束了这次杭州之游。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Mengz You's blog.]]></title>
   <link href="http://youmz.cn/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-12-10T15:18:11+00:00</updated>
+  <updated>2014-12-10T15:21:04+00:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[用Lantern来自由地访问网络]]></title>
+    <link href="http://youmz.cn/blog/2014/12/10/access-open-network-with-lantern.html"/>
+    <updated>2014-12-10T13:43:17+00:00</updated>
+    <id>http://youmz.cn/blog/2014/12/10/access-open-network-with-lantern</id>
+    <content type="html"><![CDATA[<h2>什么是<a href="https://getlantern.org">Lantern</a></h2>
+
+<p>Lantern是一个应用程序，是一个你安装在你的电脑里，让整个网络世界都逃脱网络审查的应用程序。 <br/>
+Lantern的目标是：</p>
+
+<blockquote><p>构建快速，可靠的连接到开放的互联网。通过运行Lantern，每一台计算机都可以成为一台服务器，每一个不受审查的用户的接入都可以成为受审查用户的接入点，提供网关到那些受审查的站点，比如<a href="https://twitter.com">Twitter</a>，<a href="https://www.facebook.com">Facebook</a>和<a href="https://www.youtube.com">YouTube</a>。</p></blockquote>
+
+<p>想查看更多关于Lantern的信息，可以访问其<a href="https://getlantern.org">官方网站</a>。</p>
+
+<h2>安装Lantern</h2>
+
+<p>Lantern不再受理邀请请求。为了保护审查对Lantern的渗透，现在所有的邀请都只能在朋友与朋友之间。如果您认识并且信任某个已经在使用Lantern的人，请联系他们获得邀请。当然需要的可以联系我了，呵呵！收到邀请后，你的邮箱会收到Lantern的下载链接。
+其实也可以直接到Lantern的主页去直接下载了。Lantern提供了Windows，Mac OS X以及Linux(deb包)上的安装包，</p>
+
+<h2>使用Lantern</h2>
+
+<p>安装完成之后，要使用Lantern你还需要一个<a href="https://www.google.com">Google</a>帐号，这个嘛，就得相办法注册一个了，如果使用过<a href="https://mail.google.com">Gmail</a>，那就肯定有Google帐号了。 <br/>
+打开Lantern后，会通过验证登录方式引导你登录Gmail帐号，登录完成后，接下来就是添加一些Gmail好友了，最好是能添加到一些处在非审核地区的朋友。 <br/>
+<img src="http://imgout.ph.126.net/38987013/Lantern_Friends.jpg" alt="添加好友" /></p>
+
+<p>当然，即使没有加上非审核地区的好友，也能使用Lantern。</p>
+
+<p>当Lantern连接上之后，你可以设置为全局代理，但是这样不好，一个是效率问题，最好是使用浏览器的代理插件来设置那些被封杀的网站使用Lantern代理。 <br/>
+比如在<a href="https://chrome.google.com">Chrome</a>上使用<a href="https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm">SwitchySharp</a>插件来设置代理为Lantern里提供的PAC URL。 <br/>
+<img src="http://imgout.ph.126.net/38987014/Lantern_pac.jpg" alt="PAC_RUL" /></p>
+
+<p>之后就是痛痛快快地上网啦，自用的互联网。 <br/>
+最后就是要感谢Lantern项目的贡献者们。还要吐槽一下天朝（当然世界上除了天朝还有一些类似国家）统治者们！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[放弃使用digikam 4.0版]]></title>
@@ -246,7 +282,7 @@ SCRIPTEND</p></blockquote>
 
 <blockquote><p>\$ cat download.sh <br/>
 ftp -in mirrors.issp.co.th &lt;&lt; SCRIPTEND <br/>
-user anonymous <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#116;&#101;&#x73;&#x74;&#x40;&#116;&#x65;&#115;&#116;&#46;&#99;&#111;&#109;">&#116;&#x65;&#115;&#116;&#x40;&#x74;&#x65;&#115;&#x74;&#46;&#x63;&#x6f;&#x6d;</a> <br/>
+user anonymous <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x74;&#x65;&#x73;&#x74;&#x40;&#x74;&#101;&#115;&#116;&#x2e;&#x63;&#111;&#x6d;">&#116;&#x65;&#115;&#x74;&#64;&#116;&#101;&#115;&#116;&#x2e;&#x63;&#x6f;&#x6d;</a> <br/>
 binary <br/>
 cd cpan/authors/id/P/PM/PMQS/ <br/>
 mget Compress-Raw-Bzip2-2.027.tar.gz <br/>
@@ -487,7 +523,7 @@ RX bytes:14708447 (14.0 Mb) TX bytes:2844560 (2.7 Mb)</p></blockquote>
 
 <p>要使用ssh，你需要安装sshd。在<a href="http://www.ubuntu.com/">Ubuntu</a>系统，也就是<strong>openssh-server</strong>包。为了外部访问，你也需要在路由器/防火墙使用端口22的转发你的<a href="http://www.whatismyip.com/">外部IP</a>。现在你需要使用你的普通用户权限登录到你的机器。</p>
 
-<blockquote><p>$ ssh <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#117;&#115;&#101;&#114;&#64;&#x31;&#57;&#x32;&#46;&#49;&#x36;&#56;&#46;&#x31;&#46;&#x31;&#48;&#x30;">&#x75;&#115;&#101;&#114;&#x40;&#49;&#x39;&#50;&#46;&#x31;&#x36;&#56;&#x2e;&#x31;&#x2e;&#49;&#x30;&#x30;</a>   </br>
+<blockquote><p>$ ssh <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x75;&#115;&#101;&#x72;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#x36;&#56;&#x2e;&#49;&#46;&#49;&#x30;&#x30;">&#117;&#115;&#x65;&#x72;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#x2e;&#x31;&#46;&#x31;&#48;&#x30;</a>   </br>
 user@192.168.1.100′s password:</p></blockquote>
 
 <p>输入密码，你就可以完全访问远程系统了。
@@ -1230,39 +1266,6 @@ output                  1871  1 video</p></blockquote>
 <p></p>
 
 <p>不过冒泡排序在排序算法中是效率比较差的算法了，实际中应该很少应用，呵呵！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[杭州游]]></title>
-    <link href="http://youmz.cn/blog/2010/10/10/travel-to-hangzhou.html"/>
-    <updated>2010-10-10T15:03:32+00:00</updated>
-    <id>http://youmz.cn/blog/2010/10/10/travel-to-hangzhou</id>
-    <content type="html"><![CDATA[<p>7号下午，上海南站，一张火车票直奔杭州。到杭州天都已经黑啦！随便坐了一路公交车，看见还算繁华的地方下车后，得知是体育场路，之后走了一段到中山北路，随便找了一个宾馆住下。</p>
-
-<p>第二天，大概睡到9点起来，上会网，看了看西湖的路线！Ok，出发，直接抵达北山路西湖边上准备步行环游西湖。先慢慢沿着西湖边往断桥方向走，一边走一边拿着相机拍照。一路上似乎都有桂花，香气扑鼻。</p>
-
-<!-- more -->
-
-
-<p>天气很好，中午的阳光明媚而不强烈，照在身上很舒服。游人不算很多，估计是因为十一黄金周已经结束。过了断桥又了很长一段，到了苏堤（难道是苏东坡修建的？）北端。沿着苏堤往南走，苏堤一边是西湖，一边是西里湖。风景还真是不错，一路上也还有规划香，真是“幽幽西湖水，纵闻两岸香”啊！苏提的两个岸边隔一段都有休息的长凳，走累了，就在边上坐了一会，时时一阵秋风吹过，真是惬意啊！ <br/>
-<img src="https://lh3.googleusercontent.com/-u_CldSN_I5c/ToFyY3clXJI/AAAAAAAAAkk/Jytt4kXvK7g/w945-h709-no/DSC05448.JPG" alt="桂花" /></p>
-
-<p>之后又走了好长一段，来到了钓鱼区，岸边全是一群老头摆满了鱼竿。 <br/>
-<img src="https://lh5.googleusercontent.com/-Yo4oXBa4D0g/ToFyYwhLMDI/AAAAAAAAAkk/548uk9ntEhk/w945-h709-no/DSC05462.JPG" alt="钓鱼" /></p>
-
-<p>我走近一看，他们还真钓到不少的鱼。一直连续好长一段，全是钓鱼的，搞得我都不能沿着岸边走，只能沿着苏堤中间的道路走。一直一直走，直到苏堤的南端，之后有顺着西湖边走到雷峰塔所在的山脚下。由于进雷峰塔景区需要门票，所以也就没进去，就在山脚下晃了一下。之后又沿着西湖边往北走，最后不知道走到了哪，就到路边搭个车回去休息啦！</p>
-
-<p>呆到天黑，吃过晚饭我又搭车去雷锋塔景区附近，想看看西湖夜景，结果除雷峰塔有点灯光，其它地方一片漆黑。 <br/>
-<img src="https://lh6.googleusercontent.com/-P0yNGIJtroE/ToFyYzBk5kI/AAAAAAAAAkk/h83UjYChK2Q/w945-h709-no/DSC05485.JPG" alt="雷峰塔" /></p>
-
-<p>也就随便照了几张雷峰塔夜景，然后散散步。 <br/>
-之后回酒店休息，第三天起床后去了南宋御街。这是一条步行街，两侧的建筑都是仿古风格，这里也是南宋时的一条古街，还有一处留有古迹，那就是街道有一个坑，估计那个坑就是当时真的街道。 <br/>
-<img src="https://lh6.googleusercontent.com/-J90Tl6irnss/ToFyY8qcT2I/AAAAAAAAAkk/3KdGHsgvj6Y/w945-h709-no/DSC05497.JPG" alt="老街" /></p>
-
-<p>现在的街道已经填高了很多啦！御街有个麦当劳店，风格和其他地方的店真不一样。其实御街就类似其他城市的什么古镇街道一样，有很多民间的小玩意的商店和很多美食。</p>
-
-<p>逛完御街，腿也酸了，想想没什么好玩的啦，就直接搭车去了火车站，买了张票，结束了这次杭州之游。</p>
 ]]></content>
   </entry>
   

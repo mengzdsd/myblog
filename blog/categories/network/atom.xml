@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Network | Mengz You's blog.]]></title>
   <link href="http://youmz.cn/blog/categories/network/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-12-10T15:25:42+00:00</updated>
+  <updated>2014-12-21T21:46:58+08:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[用Lantern来自由地访问网络]]></title>
     <link href="http://youmz.cn/blog/2014/12/10/access-open-network-with-lantern.html"/>
-    <updated>2014-12-10T13:43:17+00:00</updated>
+    <updated>2014-12-10T21:43:17+08:00</updated>
     <id>http://youmz.cn/blog/2014/12/10/access-open-network-with-lantern</id>
     <content type="html"><![CDATA[<h2>什么是<a href="https://getlantern.org">Lantern</a></h2>
 
@@ -55,7 +55,7 @@ Lantern的目标是：</p>
   <entry>
     <title type="html"><![CDATA[一台机子双网卡同时上电信ADSL和校园网]]></title>
     <link href="http://youmz.cn/blog/2006/10/12/double-nic-to-ads-and-comnet.html"/>
-    <updated>2006-10-12T05:58:46+00:00</updated>
+    <updated>2006-10-12T13:58:46+08:00</updated>
     <id>http://youmz.cn/blog/2006/10/12/double-nic-to-ads-and-comnet</id>
     <content type="html"><![CDATA[<p>由于校园网的开通，电信网又还没到期，所以给机子再加了一个网卡，插上校园网线路，免得换线太麻烦。原以为开启两个网卡就能同时上两个网，可是却只以校园网为主，上外网时需要禁用内网，实在麻烦，于是上网查找方法，终于找到一个，就是设置静态路由列表：用以下代码：</p>
 

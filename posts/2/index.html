@@ -30,6 +30,8 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+<!-- Weibo -->
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
   
 
@@ -58,8 +60,8 @@
   
 <ul class="main-navigation">
   <li><a href="/">文章</a></li>
-  <li><a href="/about">关于我</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/aboutme">关于我</a></li>
+  <li><a href="/blog/archives">归档</a></li>
 </ul>
 
 </nav>
@@ -89,7 +91,7 @@
   
 
 
-<time datetime="2011-04-07T15:03:32+00:00" pubdate data-updated="true">Apr 7<sup>th</sup>, 2011</time>
+<time datetime="2011-04-07T23:03:32+08:00" pubdate data-updated="true">Apr 7<sup>th</sup>, 2011</time>
         
       </p>
     
@@ -134,7 +136,7 @@
   
 
 
-<time datetime="2011-02-13T15:03:32+00:00" pubdate data-updated="true">Feb 13<sup>th</sup>, 2011</time>
+<time datetime="2011-02-13T23:03:32+08:00" pubdate data-updated="true">Feb 13<sup>th</sup>, 2011</time>
         
       </p>
     
@@ -180,7 +182,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2011-02-02T15:03:32+00:00" pubdate data-updated="true">Feb 2<sup>nd</sup>, 2011</time>
+<time datetime="2011-02-02T23:03:32+08:00" pubdate data-updated="true">Feb 2<sup>nd</sup>, 2011</time>
         
       </p>
     
@@ -221,7 +223,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2011-01-31T08:16:58+00:00" pubdate data-updated="true">Jan 31<sup>st</sup>, 2011</time>
+<time datetime="2011-01-31T16:16:58+08:00" pubdate data-updated="true">Jan 31<sup>st</sup>, 2011</time>
         
       </p>
     
@@ -266,7 +268,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2011-01-30T07:57:50+00:00" pubdate data-updated="true">Jan 30<sup>th</sup>, 2011</time>
+<time datetime="2011-01-30T15:57:50+08:00" pubdate data-updated="true">Jan 30<sup>th</sup>, 2011</time>
         
       </p>
     
@@ -311,7 +313,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2011-01-29T07:31:10+00:00" pubdate data-updated="true">Jan 29<sup>th</sup>, 2011</time>
+<time datetime="2011-01-29T15:31:10+08:00" pubdate data-updated="true">Jan 29<sup>th</sup>, 2011</time>
         
       </p>
     
@@ -354,7 +356,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2011-01-02T15:03:32+00:00" pubdate data-updated="true">Jan 2<sup>nd</sup>, 2011</time>
+<time datetime="2011-01-02T23:03:32+08:00" pubdate data-updated="true">Jan 2<sup>nd</sup>, 2011</time>
         
       </p>
     
@@ -397,7 +399,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2010-11-27T15:03:32+00:00" pubdate data-updated="true">Nov 27<sup>th</sup>, 2010</time>
+<time datetime="2010-11-27T23:03:32+08:00" pubdate data-updated="true">Nov 27<sup>th</sup>, 2010</time>
         
       </p>
     
@@ -440,7 +442,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2010-11-19T21:33:20+00:00" pubdate data-updated="true">Nov 19<sup>th</sup>, 2010</time>
+<time datetime="2010-11-19T21:33:20+08:00" pubdate data-updated="true">Nov 19<sup>th</sup>, 2010</time>
         
       </p>
     
@@ -483,7 +485,7 @@ line 233: syntax error: unexpected end of file</p></blockquote>
   
 
 
-<time datetime="2010-10-27T15:03:32+00:00" pubdate data-updated="true">Oct 27<sup>th</sup>, 2010</time>
+<time datetime="2010-10-27T23:03:32+08:00" pubdate data-updated="true">Oct 27<sup>th</sup>, 2010</time>
         
       </p>
     
@@ -515,36 +517,12 @@ line 233: syntax error: unexpected end of file</p></blockquote>
 </div>
 <aside class="sidebar">
   
-    
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/mengzyou">@mengzyou</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'mengzyou',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
+    <section xmlns:wb="http://open.weibo.com/wb">
+    <a href="/aboutme" style="text-decoration:none">
+        <img src="/images/me_logo-48.png" width="48" height="48">
+    </a>
+    <wb:follow-button uid="1855179583" type="gray_1" width="67" height="24" ></wb:follow-button>
 </section>
-
 
 <section class="googleplus">
   <h1>
@@ -558,21 +536,14 @@ line 233: syntax error: unexpected end of file</p></blockquote>
 
 
 <section>
-    <a class="twitter-timeline" href="https://twitter.com/mengzyou" data-widget-id="461816712795406337">@mengzyou 的推文</a>
+    <h1><a class="twitter-timeline" href="https://twitter.com/mengzyou" data-widget-id="461816712795406337">@mengzyou 的推文</a></h1>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </section>
 
 <section>
-    <h1>
-        <a href="/about" style="text-decoration:none">
-            <img src="/images/me_logo-48.png" width="48" height="48">
-            About Me
-        </a>
-    </h1>
-    <h2>我的微信</h2>
+    <h1>微信扫一扫</h1>
     <img src="/images/mmqrcode.png">
 </section>
-
   
 </aside>
 

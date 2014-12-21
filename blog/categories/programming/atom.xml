@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Programming | Mengz You's blog.]]></title>
   <link href="http://youmz.cn/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://youmz.cn/"/>
-  <updated>2014-12-10T15:25:42+00:00</updated>
+  <updated>2014-12-21T21:46:58+08:00</updated>
   <id>http://youmz.cn/</id>
   <author>
     <name><![CDATA[Mengz You]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[改良cocktail排序算法实现]]></title>
     <link href="http://youmz.cn/blog/2010/10/27/improve-implement-cocktail-order-algorithm.html"/>
-    <updated>2010-10-27T15:03:32+00:00</updated>
+    <updated>2010-10-27T23:03:32+08:00</updated>
     <id>http://youmz.cn/blog/2010/10/27/improve-implement-cocktail-order-algorithm</id>
     <content type="html"><![CDATA[<p>记得以前学习数据结构和算法时就了解了冒泡排序算法， 前几天的一个面试也被问到了这个问题。于是回来后就又温习了一遍，还了解到了一种冒泡的改良算法，叫做鸡尾酒(cocktail)排序算法，其实现是通过连个循环分别从两端进行冒泡，如下所示：</p>
 
@@ -91,7 +91,7 @@ void bi_bubble_sort(T *array, int n)
   <entry>
     <title type="html"><![CDATA[VC++2005 :Fatal Error C1902:程序数据库管理器不匹配]]></title>
     <link href="http://youmz.cn/blog/2007/10/14/vcplusplus2005-fatal-error.html"/>
-    <updated>2007-10-14T15:03:32+00:00</updated>
+    <updated>2007-10-14T23:03:32+08:00</updated>
     <id>http://youmz.cn/blog/2007/10/14/vcplusplus2005-fatal-error</id>
     <content type="html"><![CDATA[<p>安装VC++ SP1后，调试程序时候提示错误：</p>
 

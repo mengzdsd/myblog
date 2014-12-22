@@ -1,0 +1,18 @@
+---
+layout: post
+title: "开始"
+date: 2014-01-02 21:33:20 +0800
+published: false
+comments: true
+categories: Life
+description: "2013 年照片电影，来自 Google 照片"
+---
+
+从现在开始，在里写Blog。
+更新应该不会太多，但是还是希望能有所分享。
+
+早于这之前的文章是从以前的Wordpress移植过来的，新的文章将出现在里。
+除了文章之外，你还可以在[这里][aboutme_link]发现一些[关于我][aboutme_link]的信息，以及以往的[工作简历][resume_link]。
+
+[aboutme_link]: http://youmz.cn/about/
+[resume_link]: http://youmz.cn/about/resume.htmlt

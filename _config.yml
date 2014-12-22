@@ -106,7 +106,13 @@ github_username:  mengzyou
 
 # Build settings
 # Conversion
-markdown: kramdown
+markdown: rdiscount
+rdiscount:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+
 highlighter: pygments
 
 # Produce an index for related posts, or flag on command-line (--lsi)
@@ -142,9 +148,6 @@ tag_dir: blog/tags
 #  png_dir:    images/latex
 #  png_url:    /images/latex
 #  fenced_code_blocks: true
-
-#rdiscount:
-#  extensions: []
 
 #redcarpet:
 #  extensions: []

@@ -134,12 +134,7 @@ highlighter: pygments
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 10          # Posts per page on the blog index
 paginate_path: "blog/page:num"  # Directory base for pagination URLs eg. /blog/page2/
-excerpt_link: "Read more &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!-- more -->"
-
-pagi_prev: "Older"
-pagi_next: "Newer"
-pagi_top: "Go to top"
 
 category_dir: blog/categories
 tag_dir: blog/tags

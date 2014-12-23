@@ -3,9 +3,7 @@ layout: default
 ---
 
 <div class="home">
-
   <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
@@ -15,7 +13,7 @@ layout: default
         {% assign excerpted = 'true' %}
         {% if excerpted == 'true' %}
         <footer>
-            <a rel="full-article" href="{{ post.url | prepend: site.baseurl }}">{{ site.excerpt_link }}</a>
+            <a rel="full-article" href="{{ post.url | prepend: site.baseurl }}">{{ site.data.trans.excerpt_link }}</a>
         </footer>
         {% endif %}
       </li>
@@ -23,13 +21,12 @@ layout: default
   </ul>
     <div class="pagination">
     {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page_path}}">&larr; {{ site.pagi_prev }}</a>
+      <a class="prev" href="{{paginator.next_page_path}}">&larr; {{ site.data.trans.pagi_prev }}</a>
     {% endif %}
-    <a href="#page_header">{{ site.pagi_top }}</a>
+    <a href="#page_header">{{ site.data.trans.pagi_top }}</a>
     {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page_path}}">{{ site.pagi_next }} &rarr;</a>
+    <a class="next" href="{{paginator.previous_page_path}}">{{ site.data.trans.pagi_next }} &rarr;</a>
     {% endif %}
   </div>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

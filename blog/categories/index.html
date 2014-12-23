@@ -1,0 +1,16 @@
+---
+layout: page
+title: "文章分类索引"
+description: "博客文章的分类索引"
+footer: false
+---
+
+<div id="blog-categories">
+    <ul class="categories-list">
+        {% for category in site.data.categories %}
+        <li>
+            <h2><a href="{{ category.ename | prepend: site.baseurl }}">{{ category.cname }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

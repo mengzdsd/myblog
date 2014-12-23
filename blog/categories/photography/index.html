@@ -1,0 +1,17 @@
+---
+layout: page
+title: "类别：摄影"
+description: "类别为（摄影）的文章列表"
+cate_cname: "photography"
+footer: false
+---
+
+<div id="post-categories">
+    <ul class="post-list">
+        {% for post in site.categories.photography %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

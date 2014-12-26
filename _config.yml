@@ -136,8 +136,8 @@ paginate: 10          # Posts per page on the blog index
 paginate_path: "blog/page:num"  # Directory base for pagination URLs eg. /blog/page2/
 excerpt_separator: "<!-- more -->"
 
-category_dir: blog/categories
-tag_dir: blog/tags
+category_dir: blog/categories/
+tag_dir: blog/tags/
 
 # Markdown Processors
 #maruku:

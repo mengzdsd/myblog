@@ -3,7 +3,7 @@ layout: post
 title: "命令行修改Linux系统日期时间"
 date: 2011-04-07 15:03:32 +0000
 comments: true
-categories: Linux
+categories: "Ittech"
 description: "在Linux上用命令行修改系统时间"
 ---
 

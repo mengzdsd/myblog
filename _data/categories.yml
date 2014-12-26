@@ -1,8 +1,14 @@
-- ename: "life"
+- ename: "Life"
   cname: "生活"
 
-- ename: "photography"
+- ename: "Photography"
   cname: "摄影"
 
-- ename: "ittech"
+- ename: "Ittech"
   cname: "IT技术"
+
+- ename: "Translation"
+  cname: "翻译"
+
+- ename: "Travel"
+  cname: "旅行"

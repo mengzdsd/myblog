@@ -3,7 +3,7 @@ layout: post
 title: "Google Earth在Linux下字体显示问题"
 date: 2009-12-05 00:48:16 +0800
 comments: true
-categories: Linux
+categories: "Ittech"
 description: "记录解决Google Earth无法显示中文字符的方法"
 ---
 

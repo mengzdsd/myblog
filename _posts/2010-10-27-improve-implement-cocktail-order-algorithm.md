@@ -3,7 +3,7 @@ layout: post
 title: '改良cocktail排序算法实现'
 date: 2010-10-27 15:03:32 +0000
 comments: true
-categories: Programming
+categories: "Ittech"
 description: "一个cocktail排序算法去的改良实现"
 ---
 

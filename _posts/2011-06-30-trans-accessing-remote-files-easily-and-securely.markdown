@@ -3,7 +3,7 @@ layout: post
 title: "【翻译】简便安全地访问远程文件"
 date: 2011-06-30 13:58:46 +0800
 comments: true
-categories: [Translation, Linux]
+categories: ["Translation","Ittech"]
 description: "翻译的一篇关于如何使用ssh来进行安全文件访问的文章"
 ---
 

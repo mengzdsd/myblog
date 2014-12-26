@@ -9,7 +9,7 @@ footer: false
     <ul class="categories-list">
         {% for category in site.data.categories %}
         <li>
-            <h2><a href="{{ category.ename | prepend: site.baseurl }}">{{ category.cname }}</a><h2>
+            <h2><a href="{{ category.ename | downcase | prepend: site.baseurl }}">{{ category.cname }}</a><h2>
         </li>
         {% endfor %}
     </ul>

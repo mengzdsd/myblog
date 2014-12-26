@@ -3,7 +3,7 @@ layout: post
 title: "哥德堡之行"
 date: 2011-05-02 12:48:11 +0800
 comments: true
-categories: Life
+categories: ["Life","Travel"]
 description: "2011年出差瑞典，趁机到哥德堡玩了一趟，这也算是一篇游记"
 ---
 

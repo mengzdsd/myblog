@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "类别：生活"
-description: "类别为（生活）的文章列表"
-cate_cname: "Life"
+title: "类别：旅行"
+description: "类别为（旅行）的文章列表"
+cate_cname: "Travel"
 footer: false
 ---
 
 <div id="post-categories">
     <ul class="post-list">
-        {% for post in site.categories.life %}
+        {% for post in site.categories.travel %}
         <li>
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
         </li>

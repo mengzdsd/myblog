@@ -3,6 +3,8 @@ pagi_prev: "前一页"
 pagi_next: "后一页"
 pagi_top: "回到顶部"
 post_in: "发布在"
+post_prev: "上一篇"
+post_next: "下一篇"
 
 # page names
 page_about: "关于"

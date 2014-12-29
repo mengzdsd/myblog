@@ -9,6 +9,9 @@ single: true
             <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
         </header>
         {{ content }}
+        <footer class="post-footer">
+        {% include post_footer.html %}
+        </footer>
     </article>
 
 </div>

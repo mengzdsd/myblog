@@ -1,0 +1,8 @@
+<p class="meta">
+{% if post.author %}{% assign author = post.author %}{% else %}{% assign author = site.author %}{% endif %}
+{% if author %}<span class="post_author">{{ author }}  </span>{% endif %}
+{% capture category_size %}{{ page.categories | size }}{% endcapture %}
+{% if category_size != '0' %}
+    <span class="categories">{{ site.data.trans.post_in }} {% for category_post in page.categories %}{% assign category_ename = category_post | capitalize %}{% for category_data in site.data.categories %}{% if category_ename == category_data.ename %} 【<a href="/{{ site.baseurl }}{{ site.category_dir }}{{ category_post }}">{{ category_data.cname }}</a>】{% endif %}{% endfor %}{% endfor %}</span>
+{% endif %}
+</p>

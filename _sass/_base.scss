@@ -43,6 +43,10 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
+    border-radius: 0.3em;
+    border: white 0.5em solid;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 3px;
 }
 
 

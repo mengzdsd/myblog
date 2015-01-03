@@ -5,6 +5,8 @@ pagi_top: "回到顶部"
 post_in: "发布在"
 post_prev: "上一篇"
 post_next: "下一篇"
+str_basedon: "基于"
+str_build: "构建"
 
 # page names
 page_about: "关于"

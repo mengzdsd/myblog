@@ -93,16 +93,27 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($brand-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: darken($brand-color, 15%);
+/*        text-decoration: underline; */
     }
 }
 
+a.read-more {
+  color: $text-color;
+  font-size: 12px;
+  display: inline-block;
+  background: #ebebeb;
+  border-radius: 2px;
 
+  &:hover {
+    color: $text-white-color;
+    background: $brand-color;
+  }
+}
 
 /**
  * Blockquotes
@@ -201,4 +212,16 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+ * Footer
+ */
+p.copyright, h2.footer-heading {
+  margin-bottom: 0px;
+}
+
+
+ul.contact-list {
+  margin-bottom: 5px;
 }

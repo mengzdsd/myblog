@@ -10,12 +10,12 @@
 {% include post_sharing.html %}
 {% endunless %}
 <br/>
-<p class="meta">
+<div class="pagination">
     {% if page.previous.url %}
-    <a class="alignment-left" href="{{page.previous.url}}" title="{{ site.data.trans.post_prev }}: {{ page.previous.title }}">&laquo; {{ site.data.trans.post_prev }}</a>
+    <a class="prev" href="{{page.previous.url}}" title="{{ site.data.trans.post_prev }}: {{ page.previous.title }}">&laquo; {{ site.data.trans.post_prev }}</a>
     {% endif %}
-    <a href="#page_header">{{ site.data.trans.pagi_top }}</a>
+    <a href="#page_header">-{{ site.data.trans.pagi_top }}-</a>
     {% if page.next.url %}
-    <a class="alignment-right" href="{{page.next.url}}" title="{{ site.data.trans.post_next }}: {{ page.next.title }}">{{ site.data.trans.post_next }} &raquo;</a>
+    <a class="next" href="{{page.next.url}}" title="{{ site.data.trans.post_next }}: {{ page.next.title }}">{{ site.data.trans.post_next }} &raquo;</a>
     {% endif %}
-</p>
+</div>

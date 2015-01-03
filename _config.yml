@@ -63,7 +63,8 @@ timezone: Asia/Chongqing
 
 
 # Site settings
-title: Mengz You's blogger.
+title: 犹梦哲的博客空间
+subtitle: Mengz You's blogger.
 email: you.mengz@yahoo.com
 author: "犹梦哲"
 description: > # this means to ignore newlines until "baseurl:"

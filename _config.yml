@@ -71,7 +71,8 @@ description: > # this means to ignore newlines until "baseurl:"
   这里是犹梦哲的文章空间，记录了犹梦哲写下的一些关于生活、工作、爱好以及学习的一些文章。
 
 copyright: "Copyright &copy;"
-jekyll_url: "http://jekyllrb.com/"
+jekyll_url: "http://jekyllrb.com"
+github_pages_url: "https://pages.github.com"
 
 # Serve the website from the given base URL, or flag --baseurl URL on 'serve' sub-command.
 baseurl: "" # the subpath of your site, e.g. /blog/

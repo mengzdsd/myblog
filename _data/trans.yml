@@ -8,6 +8,7 @@ post_next: "下一篇"
 str_basedon: "基于"
 str_build: "构建"
 str_subscribe: "订阅"
+str_deployed: "部署在"
 
 # page names
 page_about: "关于"

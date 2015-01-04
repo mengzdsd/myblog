@@ -76,7 +76,7 @@ github_pages_url: "https://pages.github.com"
 
 # Serve the website from the given base URL, or flag --baseurl URL on 'serve' sub-command.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.youmz.cn" # the base hostname & protocol for your site
+url: "http://blog.mengz.me" # the base hostname & protocol for your site
 twitter_username: mengzyou
 github_username:  mengzyou
 aboutme_username: mengz.you

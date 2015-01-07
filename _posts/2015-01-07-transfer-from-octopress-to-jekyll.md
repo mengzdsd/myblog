@@ -34,11 +34,13 @@ Octopress很强大，已经我我们做了很多事情，比如文章类别的�
 1. 安装Ruby，这个请参考[Ruby站点][ruby_link]；   
 2. 安装Jekyll Gem：   
 > $ gem install jekyll   
+   
 3. 生成一个站点，运行：
-> \$ jekyll new blogsite   
-> \$ cd blogsite   
-> \$ jekyll serve   
-然后就可以通过访问*http://localhost:4000*查看了。
+> $ jekyll new blogsite   
+> $ cd blogsite   
+> $ jekyll serve   
+   
+然后就可以通过浏览器访问*localhost:4000*查看了。
 
 至于如何部署到Github页面服务，那也是相当简单的，查看[Github页面][githubpages_link]的说明吧。   
 

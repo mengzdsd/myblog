@@ -1,0 +1,16 @@
+---
+layout: page
+title: "文章标签集合"
+description: "博客文章包含的所有标签"
+footer: false
+---
+
+<div id="blog-tags">
+    <ul class="tags-list">
+        {% for tag in site.data.tags %}
+        <li>
+            <h2><a href="{{ tag.ename | prepend: site.baseurl }}">{{ tag.cname }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

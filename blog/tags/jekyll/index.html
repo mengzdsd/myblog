@@ -1,0 +1,17 @@
+---
+layout: page
+title: "标签：jekyll"
+description: "标签为（jekyll）的文章"
+tag_cname: "jekyll"
+footer: false
+---
+
+<div id="post-tag">
+    <ul class="post-list">
+        {% for post in site.tags.jekyll %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,17 @@
+---
+layout: page
+title: "类别：[category.cname]"
+description: "类别为（[category.cname]）的文章列表"
+cate_cname: "[category.cname]"
+footer: false
+---
+
+<div id="post-categories">
+    <ul class="post-list">
+        {% for post in site.categories.[category.ename] %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

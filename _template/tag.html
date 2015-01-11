@@ -1,0 +1,17 @@
+---
+layout: page
+title: "标签：[tag.cname]"
+description: "标签为（[tag.cname]）的文章"
+tag_cname: "[tag.cname]"
+footer: false
+---
+
+<div id="post-tag">
+    <ul class="post-list">
+        {% for post in site.tags.[tag.ename] %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

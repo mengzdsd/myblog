@@ -260,3 +260,26 @@ div.pagination a.next {
   position: absolute;
   right: 0;
 }
+
+/**
+ * Footer
+ */
+p.copyright, h2.footer-heading {
+  margin-bottom: 0px;
+}
+
+
+ul.contact-list {
+  margin-bottom: 5px;
+}
+
+/**
+ * post footer
+ */
+p.categories {
+  margin-bottom: 0px;
+}
+
+p.tags {
+  margin-bottom: 5px;
+}

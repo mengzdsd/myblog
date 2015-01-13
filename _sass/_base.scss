@@ -219,13 +219,23 @@ pre {
 }
 
 /**
- * Footer
+ * post footer categories and tags
  */
-p.copyright, h2.footer-heading {
-  margin-bottom: 0px;
-}
+p.tags {
+  a {
+    color: $text-white-color;
+    font-size: 12px;
+    display: inline-block;
+    background: $brand-color;
+    border-radius: 2px;
 
+    &:hover {
+      color: $text-white-color;
+      background: #ebebeb;
+    }
+  }
 
-ul.contact-list {
-  margin-bottom: 5px;
+  &:before {
+    content: url(/images/tag_icon2_54x20.png);
+  }
 }

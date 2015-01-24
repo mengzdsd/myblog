@@ -1,0 +1,17 @@
+---
+layout: page
+title: "标签：路由器"
+description: "标签为（路由器）的文章"
+tag_cname: "路由器"
+footer: false
+---
+
+<div id="post-tag">
+    <ul class="post-list">
+        {% for post in site.tags.router %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

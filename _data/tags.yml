@@ -17,3 +17,9 @@
 - ename: "linux"
   cname: "linux"
 
+- ename: "systemm"
+  cname: "系统管理"
+
+- ename: "systemd"
+  cname: "systemd"
+

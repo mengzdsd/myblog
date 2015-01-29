@@ -239,6 +239,27 @@
             font-size: 18px;
         }
     }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    padding-left: 2px;
+    empty-cells: hide;
+  }
+
+  table th, table td {
+    padding: 3px 7px 2px 7px;
+    border:1px solid #7a7;
+  }
+
+  table th {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+  }
 }
 
 .post-footer .sharing {

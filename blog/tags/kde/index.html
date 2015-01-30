@@ -1,0 +1,17 @@
+---
+layout: page
+title: "标签：kde"
+description: "标签为（kde）的文章"
+tag_cname: "kde"
+footer: false
+---
+
+<div id="post-tag">
+    <ul class="post-list">
+        {% for post in site.tags.kde %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><h2>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

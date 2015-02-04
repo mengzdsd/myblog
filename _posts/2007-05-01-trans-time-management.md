@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '【翻译】时间管理'
-date: 2011-06-30 13:58:46 +0800
+date: 2007-05-01 13:58:46 +0800
 comments: true
 categories: "Translation"
 description: "翻译的一篇文章"

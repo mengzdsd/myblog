@@ -11,27 +11,27 @@ description: "了解openSUSE上cron任务的运行时间"
 <!-- more -->
 
 于是我用[*crontab*][crontab_link]命令来查看当前的cron任务列表，可是得到如下返回：
-> $sudo crontab -u root -l
-> root’s password:
-> no crontab for root
+> $sudo crontab -u root -l  
+> root’s password:  
+> no crontab for root  
 
 可是我发现在*/etc/cron.daily/*目录下有一些脚本， 其中就有一个*suse-updatedb*。那些进程就是由这个脚本启动的。
 接下来，我查看了一下*/etc/crontab*文件:
-> -*/15 * * * *   root  test -x /usr/lib/cron/run-crons && /usr/lib/cron/run-crons >/dev/null 2>&1
+> -*/15 * * * *   root  test -x /usr/lib/cron/run-crons && /usr/lib/cron/run-crons >/dev/null 2>&1  
 
 这说明系统会每15分钟调用一次*/usr/lib/cron/run-crons*脚本，接着查看了一下那个脚本，其中发现了一行注释：
-> \# if DAILY_TIME set, run only at a fixed time of day
+> \# if DAILY_TIME set, run only at a fixed time of day  
 
 而**DAILY_TIME**这个变量应该在*/etc/sysconfig/cron*配置文件里指定，在文件中有这么一段：
-> \## Type:         string
-> \## Default:      “”
-> \#
-> \# At which time cron.daily should start. Default is 15 minutes after booting
-> \# the system. Example setting would be “14:00″.
-> \# Due to the fact that cron script runs only every 15 minutes,
-> \# it will only run on xx:00, xx:15, xx:30, xx:45, not at the accurate time
-> \# you set.
-> DAILY_TIME=""
+> \## Type:         string  
+> \## Default:      “”  
+> \#  
+> \# At which time cron.daily should start. Default is 15 minutes after booting  
+> \# the system. Example setting would be “14:00″.  
+> \# Due to the fact that cron script runs only every 15 minutes,  
+> \# it will only run on xx:00, xx:15, xx:30, xx:45, not at the accurate time  
+> \# you set.  
+> DAILY_TIME=""  
 
 也就是说如果没有指定**DAILY_TIME**，则*cron.daily*将在系统启动后的15分钟触发，并且如果要指定特定时间，也只能指定在每小时的00/15/30/45分钟。
 

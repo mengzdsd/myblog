@@ -16,9 +16,9 @@ description: "记录大学时期安装Linux的故事"
 
 我反复弄了好几次都是这样，甚至我把安装文件放在另一台机器上，建了一个 FTP 服务器来进行网络安装时，还是那个问题，郁闷的等了好几天，再次试装，终于在我反复使用硬盘安装和光盘安装的交替下，光盘安装终于成功了。呵呵，高兴阿！
 
-10.3将颜色主调换为了绿色。看起来，很不错，KDE左面升级到3.57，还有一个4.0的测试版。下面截几张图看看：
-![pic1][pic_1]
-![pic2][pic_2]
+10.3将颜色主调换为了绿色。看起来，很不错，KDE左面升级到3.57，还有一个4.0的测试版。下面截几张图看看：   
+![pic1][pic_1]   
+![pic2][pic_2]   
 
 [opensuse_link]: http://opensuse.org
 [pic_1]: https://old-en.opensuse.org/images/thumb/d/db/103gnome-desktop.jpg/400px-103gnome-desktop.jpg

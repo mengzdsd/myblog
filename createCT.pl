@@ -105,7 +105,7 @@ sub doActionCategory {
   my ($ename, $cname) = @_;
   my $categoryTemplateFile = $curDir . "/_template/category.html";
   my $categoriesDataFile = $curDir . "/_data/categories.yml";
-  my $categoryDir = $curDir . "/blog/tags/$ename";
+  my $categoryDir = $curDir . "/blog/categories/$ename";
   my $categoryIndexFile = $categoryDir . "/index.html";
   die "Error: The category template file is not exist!\n" unless -e $categoryTemplateFile;
   die "Error: The categories data file is not exist!\n" unless -e $categoriesDataFile;

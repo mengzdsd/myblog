@@ -4,3 +4,6 @@ _site
 # IDE project file
 .codio
 .c9
+
+# deploy configuration file
+s3_website.yml

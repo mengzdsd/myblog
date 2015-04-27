@@ -23,7 +23,6 @@ description: "翻译的关于在 SUSE 上使用 zypper 命令进行软件包管�
 <!-- more -->
 
 ###I. 使用 `zypper` 管理软件包###
-
 ####1. 安装软件包####
 使用如下语法安装一个软件包：  
 `zypper install <package name>`  
@@ -162,6 +161,9 @@ Specified lock has been successfully added.
 
 要显示所有被锁定的软件包，使用 `ll` 命令选项，代表 “List Locks”。下面的命令输出说明 “ypbind” 软件包是锁定状态，你不能删除和升级该包。  
 {% highlight bash %}
+# zypper al ypbind
+Specified lock has been successfully added.
+
 # zypper ll
 # | Name   | Type    | Repository
 --+--------+---------+-----------
@@ -182,7 +184,6 @@ Reading installed packages...
 # zypper ll
 There are no package locks defined.
 {% endhighlight %}
-
 
 ###II. 管理软件源###
 ####11. 添加软件源####
@@ -325,3 +326,4 @@ Autorefresh has been enabled for repository 'mylocalrepo'.
 [link_redhat]: http://www.redhat.com/
 [link_debian]: http://www.debian.org/
 [link_yum]: https://zh.wikipedia.org/wiki/Yellowdog_Updater,_Modified
+

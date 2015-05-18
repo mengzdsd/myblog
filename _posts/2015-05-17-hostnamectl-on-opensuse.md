@@ -4,7 +4,7 @@ title: "在 openSUSE 上使用 hostnamectl 来管理主机名"
 date: 2015-05-17 13:35 +0800
 comments: true
 categories: ["Ittech"]
-tags: ["linux","system","systemd"]
+tags: ["linux","systemm","systemd"]
 description: "介绍在 openSUSE 上使用基于 systemd 的 hostnamectl 来管理系统主机名"
 ---
 
@@ -42,7 +42,7 @@ description: "介绍在 openSUSE 上使用基于 systemd 的 hostnamectl 来管�
 2. 设置/改变静态主机名： 
 > $sudo hostnamectl set-hostname example-host.com  
 
-总是，相比使用 `hostname` 和修改配置文件的方式，使用 `hostnamectl` 更方便。   
+总之，相比使用 `hostname` 和修改配置文件的方式，使用 `hostnamectl` 更方便。   
 
 [link_wiki_systemd]: https://zh.wikipedia.org/wiki/Systemd  
 [link_man_hnc]: http://www.freedesktop.org/software/systemd/man/hostnamectl.html  

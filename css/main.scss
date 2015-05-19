@@ -15,9 +15,16 @@ $spacing-unit:     20px;
 
 $text-color:       #111;
 $text-white-color: #fff;
-$background-color: #fafafa;
-$background-header-color: #1d1d1d;
-$brand-color:      #2a7ae2;
+$background-color: black;
+$background-meun-color: rgba(0, 0, 0, 0.6);
+$background-header-color: rgba(255, 255, 255, 0.3);
+$background-post-color: rgba(255, 255, 255, 0.8);
+$background-readmore-color: rgba(255, 255, 255, 0.5);
+$background-readmore-hover-color: rgba(255, 255, 255, 0.2);
+$brand-color:      white;
+$brand-hover-color: #2a7ae2;
+$brand-visited-color: white;
+$link-color: #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

@@ -9,10 +9,11 @@ description: "2015新的一年，记录本博客从基于Octopress迁移到基�
 ---
 
 ###[Jekyll][jekyll_link]###
-Jekyll是一个将纯文本转化为静态博客网站的[Ruby][ruby_link]应用，也可以说是一个静态博客网站的框架。   
-+ 简单：不需要数据库，不需要评论功能，不需要不断的更新版本——只用关心你的博客内容   
-+ 静态：[Markdown][markdown_link](或 [Textile][textile_link]), [Liquid][liquid_link], 和HTML&CSS构建可发布的静态网站   
-+ 博客形态：支持自定义地址，博客分类，单页应用，博客为单位存储，以及自定义的布局设计   
+Jekyll是一个将纯文本转化为静态博客网站的[Ruby][ruby_link]应用，也可以说是一个静态博客网站的框架。  
+
+- 简单：不需要数据库，不需要评论功能，不需要不断的更新版本——只用关心你的博客内容   
+- 静态：[Markdown][markdown_link](或 [Textile][textile_link]), [Liquid][liquid_link], 和HTML&CSS构建可发布的静态网站   
+- 博客形态：支持自定义地址，博客分类，单页应用，博客为单位存储，以及自定义的布局设计   
 <!-- more -->
 
 使用Jekyll可以快速构建一个静态网站，其基于[Github页面][githubpages_link]服务，因此可以很简单的在Github页面上免费发布网站。   
@@ -51,4 +52,3 @@ Octopress很强大，已经我我们做了很多事情，比如文章类别的�
 [textile_link]: http://redcloth.org/textile/
 [liquid_link]: http://wiki.shopify.com/Liquid
 [githubpages_link]: https://pages.github.com/
-

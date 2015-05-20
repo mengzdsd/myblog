@@ -16,10 +16,12 @@ description: "介绍在 openSUSE 上使用基于 systemd 的 hostnamectl 来管�
 `hostnamectl [OPTIONS...] {COMMAND}`  
 
 有如下 options :  
+
 - --static,--transient,--pretty 如果用于 status 命令，static 显示当前的静态主机名; transient 显示临时的主机名，一般用于网络临时设置; pretty 显示良好阅读主机名，如"Sam's Computer"。  
 - H, --host=<user@hostname> 用来操作远程主机。  
   
-命令：  
+命令： 
+ 
 - **status** ： 显示当前系统主机名和相关信息，可以使用 --static, --transient, --pretty 仅显示指定内容。  
 - **set-hostname** [NAME] ： 设置系统主机名，默认改变 pretty，static，及 transient 。 指定相应选项只改变相应主机名。  
 - **set-icon-name** [NAME] ： 设置系统 Icon 名，用于一些图形应用来可视化主机。Icon 名需要符合 [Icon 名规范](link_icon_name)。  

@@ -3,10 +3,10 @@
   cname: "博客"
 
 - ename: "jekyll"
-  cname: "jekyll"
+  cname: "Jekyll"
 
 - ename: "octopress"
-  cname: "octopress"
+  cname: "Octopress"
 
 - ename: "ddns"
   cname: "动态域名"
@@ -15,7 +15,7 @@
   cname: "路由器"
 
 - ename: "linux"
-  cname: "linux"
+  cname: "Linux"
 
 - ename: "systemm"
   cname: "系统管理"
@@ -24,14 +24,13 @@
   cname: "systemd"
 
 - ename: "kde"
-  cname: "kde"
+  cname: "KDE"
 
 - ename: "plasma"
-  cname: "plasma"
+  cname: "Plasma"
 
 - ename: "opensuse"
-  cname: "opensuse"
+  cname: "openSUSE"
 
 - ename: "docker"
   cname: "Docker"
-

@@ -8,8 +8,8 @@ tags: ["linux","systemm","systemd"]
 description: "介绍在 openSUSE 上使用基于 systemd 的 hostnamectl 来管理系统主机名"
 ---
 
-基于 [systemd](link_wiki_systemd) 的 Linux 系统中提供了一个新的名来 [hostnamectl](link_man_hnc) 来管理系统主机名。  
-当然除了 `hostnamectl` 之外，还是可以通过原来的 [hostname](link_man_hostname) 命令以及修改 `/etc/HOSTNAME` 来修改主机名。不过使用 `hostnamectl` 更方便。  
+基于 [systemd][link_wiki_systemd] 的 Linux 系统中提供了一个新的名来 [hostnamectl][link_man_hnc] 来管理系统主机名。  
+当然除了 `hostnamectl` 之外，还是可以通过原来的 [hostname][link_man_hostname] 命令以及修改 `/etc/HOSTNAME` 来修改主机名。不过使用 `hostnamectl` 更方便。  
 <!-- more -->
 
 ####hostnamectl的语法####
@@ -24,7 +24,7 @@ description: "介绍在 openSUSE 上使用基于 systemd 的 hostnamectl 来管�
  
 - **status** ： 显示当前系统主机名和相关信息，可以使用 --static, --transient, --pretty 仅显示指定内容。  
 - **set-hostname** [NAME] ： 设置系统主机名，默认改变 pretty，static，及 transient 。 指定相应选项只改变相应主机名。  
-- **set-icon-name** [NAME] ： 设置系统 Icon 名，用于一些图形应用来可视化主机。Icon 名需要符合 [Icon 名规范](link_icon_name)。  
+- **set-icon-name** [NAME] ： 设置系统 Icon 名，用于一些图形应用来可视化主机。Icon 名需要符合 [Icon 名规范][link_icon_name]。  
 - **set-chassis** [TYPE] ： 设置 chassis 类型，用于一些图形应用来可视化主机或者改变用户界面。当前设置以下类型："desktop"，"laptop"，"server"，"tablet"，"handset"，还有 "vm" 和 "container"。  
 
 ####示例####

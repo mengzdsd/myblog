@@ -32,3 +32,6 @@
 - ename: "opensuse"
   cname: "opensuse"
 
+- ename: "docker"
+  cname: "Docker"
+

@@ -76,9 +76,9 @@ sub doActionTag {
     die "Error: Can not open $tagsDataFile file - $!\n";
   }
 
+  print DATAFILE "\n";
   print DATAFILE "- ename: \"$ename\"\n";
   print DATAFILE "  cname: \"$cname\"\n";
-  print DATAFILE "\n";
   close DATAFILE;
 
   $success = open TEMPLATEFILE, "<", $tagTemplateFile;
@@ -116,9 +116,9 @@ sub doActionCategory {
     die "Error: Can not open $categoriesDataFile file - $!\n";
   }
 
+  print DATAFILE "\n";
   print DATAFILE "- ename: \"$ename\"\n";
   print DATAFILE "  cname: \"$cname\"\n";
-  print DATAFILE "\n";
   close DATAFILE;
 
   $success = open TEMPLATEFILE, "<", $categoryTemplateFile;

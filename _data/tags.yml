@@ -34,3 +34,6 @@
 
 - ename: "docker"
   cname: "Docker"
+
+- ename: "container"
+  cname: "容器"

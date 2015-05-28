@@ -4,7 +4,7 @@ title: "通过 Dockerfile 构建 mariadb Docker 镜像"
 date: 2015-05-27 23:09 +0800
 comments: true
 categories: ["Ittech"]
-tags: ["docker","opensuse"]
+tags: ["docker","opensuse","container"]
 description: "示例如何通过 dockerfile 来构建 Docker 镜像"
 ---
 

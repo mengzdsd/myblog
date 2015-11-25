@@ -37,3 +37,6 @@
 
 - ename: "container"
   cname: "容器"
+
+- ename: "bumblebee"
+  cname: "Bumblebee"
